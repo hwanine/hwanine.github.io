@@ -105,12 +105,13 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/profile.php?id=100001739969149"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/hwanine/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/hwanj.95/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hwanine/"
+
 
 # Site Footer
 footer:
