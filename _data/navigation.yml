@@ -2,6 +2,14 @@
 main:
   - title: "Posts" # 네비게이션 바에 표시 되는 이름
     url: "/year-archive/" # 클릭시 이동할 URL
+  - title: "Category"
+    url: /categories/
+  - title: "Tags"
+    url: /tag-archive/
+  - title: "Category"
+    url: /category-archive/
+  - title: "About" # 네비게이션 바에 표시 되는 이름
+    url: "/about/" # 클릭시 이동할 URL
 
   #- title: "Home"
   #  url: /post/
