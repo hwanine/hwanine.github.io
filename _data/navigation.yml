@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "About" # 네비게이션 바에 표시 되는 이름
-    url: "/docs/about/" # 클릭시 이동할 URL
+    url: "/docs/_pages/about/" # 클릭시 이동할 URL
 
   #- title: "Home"
   #  url: /post/
