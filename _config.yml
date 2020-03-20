@@ -101,16 +101,16 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "ljh951103@naver.com"
+      url: "ljh951103@naver.com"
+     - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hwanine/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://facebook.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/"
 
 # Site Footer
 footer:
