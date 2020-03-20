@@ -101,7 +101,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "ljh951103@naver.com"
+      url: "ljh951103@naver.com"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/profile.php?id=100001739969149"
@@ -110,7 +110,7 @@ author:
       url: "https://github.com/hwanine/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/hwanj.95/"
 
 # Site Footer
 footer:
