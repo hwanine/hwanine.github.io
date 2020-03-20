@@ -15,11 +15,11 @@
 minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "en-KR"
+title                    : "잡다한 IT 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "이재환"
 description              : "An amazing website."
 url                      : "https://hwanine.github.io"
 baseurl                  : ""
