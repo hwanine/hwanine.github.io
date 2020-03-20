@@ -237,6 +237,12 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+home:
+  type: liquid
+  path: /home/
+portfolio_archive:
+  type: liquid
+  path: /portfolio/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
