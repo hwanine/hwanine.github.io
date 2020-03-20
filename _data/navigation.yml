@@ -5,9 +5,9 @@ main:
   - title: "Posts"
     url: /categories/
   - title: "Tags"
-    url: /tag_archive/
+    url: /tags/
   - title: "Portfolio"
-    url: /category_archive/
+    url: /portfolio/
 
   #- title: "Home"
   #  url: /post/
