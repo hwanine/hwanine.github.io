@@ -111,6 +111,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hwanine/"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://git.dbcore.net/"
 
 
 # Site Footer
