@@ -21,7 +21,7 @@ title_separator          : "| IT Things"
 subtitle                 : 
 name                     : "이재환"
 description              : ""
-url                      : "https://hwanine.github.io"
+url                      : "https://hwanine.github.io/"
 baseurl                  : "/home"
 repository               : "hwanine/hwanine.github.io"
 teaser                   : "/assets/images/500x300.png"
