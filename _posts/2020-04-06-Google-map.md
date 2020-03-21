@@ -104,7 +104,7 @@ Maps SDK for Android 항목을 클릭한다.
 
 이제 앱 수준, Gradle 파일에 구글 플레이 라이브러리를 추가한 후, async를 눌러준다.
 
-````Kotlin
+````kotlin
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -125,7 +125,7 @@ dependencies {
 
 <br>
 
-````Kotlin
+````kotlin
 class MapFragment : Fragment(),  OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
