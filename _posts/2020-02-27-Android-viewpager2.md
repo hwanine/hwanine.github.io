@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 뷰 페이저와 상 하단바 같이 사용하기 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, ViewPager]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -39,7 +40,7 @@ excerpt_separator: <!--more-->
 
 #### **메인 뷰페이저**
 
-````
+````xml
 <?xml version="1.0" encoding="utf-8"?>
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -176,7 +177,7 @@ excerpt_separator: <!--more-->
 
 #### **내부 뷰페이저**
 
-````
+````xml
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -209,7 +210,7 @@ viewPager.setCurrentItem(position, false)
 
 그리고 페이지가 변한 때 마다 상, 하단바의 뷰를 변경시킨다.
 
-````
+````kotlin
 viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
 
             override fun onPageScrollStateChanged(state: Int) { }
@@ -244,7 +245,7 @@ viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
 
 메소드를 타고 접근하여 뷰를 처리해보자.
 
-````
+````kotlin
 recyclerAdapter =
             PagerRecyclerAdapter(
                 this,
@@ -258,7 +259,7 @@ recyclerAdapter =
 다음과 같이 어댑터에 파라미터를 두개 추가하여 호출하게 한다..  
 물론 어댑터의 파라미터에도 추가한다.
 
-````
+````kotlin
 public class PagerRecyclerAdapter(private val context: Context, var list: List<thumbnailData>, var tb: View, var bt: View) : PagerAdapter() {
     private var layoutInflater: LayoutInflater? = null
     private var check: Boolean = false

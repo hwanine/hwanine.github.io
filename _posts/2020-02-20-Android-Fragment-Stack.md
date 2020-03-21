@@ -1,11 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 액티비티와 프래그먼트의 생명주기 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/74733647-1340bf00-5290-11ea-9516-a542d9fc9ca5.png
-"
 tags: [Kotlin, 코틀린, JAVA, Android, Activity, Fragment]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 

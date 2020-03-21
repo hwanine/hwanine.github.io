@@ -32,7 +32,7 @@ excerpt_separator: <!--more-->
 정적 변수를 사용하기위해 자바에서는 static 키워드를 사용했는데 코틀린에서는 이 키워드가 존재하지않는다.  
 코틀린은 `컴패니언 객체`를 정적변수의 대체제로 사용한다.
 
-````
+````kotlin
 class Person {
     var name: String = "JaeHwan"
     companion object {
@@ -56,12 +56,13 @@ fun main( ) {
 
 코틀린와 자바를 함께 사용하는 경우가 많다. 그렇다면 자바의 static 멤버 변수에 어떻게 접근할 수 있을까?
 
-````
+````kotlin
 public class Customer {}
 .. Java code ..
 }
 ````
-````
+
+````kotlin
 fun main( ) {
     println(Customer.LEVEL)
     Customer.login
@@ -72,7 +73,7 @@ fun main( ) {
 
 그럼 자바에서도 코틀린 객체를 사용할 수 있을까?
 
-````
+````kotlin
 class KCustomer {
     companion object {
         const val LEVEL = " "
@@ -80,7 +81,8 @@ class KCustomer {
     }
 }
 ````
-````
+
+````kotlin
 ...
 System.out.println(KCustomer.LEVEL);
 KCustomer.login( );   @JvmStatic 사용했을 때
@@ -97,7 +99,7 @@ KCustomer.Companion.login( );   // @JvmStatic 사용하지 않았을 떄
 
 - 최상위 함수 사용
 
-````
+````kotlin
 @file:JvmName("PKLevel")
 fun packageLevelFunc( ){
     println("Package-Level Function")
@@ -114,7 +116,7 @@ fun main( ) {
 
 우리는 다음과 같은 코드로 이 클래스의 이름을 지정해줄 수 있다.
 
-````
+````kotlin
 @file:JvmName("PKLevel")
 fun packageLevelFunc( ){
     println("Package-Level Function")
@@ -134,7 +136,7 @@ fun main( ) {
 하위 클래스를 생성하지 않고 내용이 조금 변경된 클래스를 만들어야 할 때, 자바에서는 익명 내부 클래스를 만들어서 처리할 수 있다.  
 코틀린에서는 그 기능을 object 표현식이나 선언으로 쉽게 처리할 수 있다.
 
-````
+````kotlin
 // object 키워드를 사용한 방식
 object OCustomer {
     var name = "Jaehwan"
@@ -156,7 +158,7 @@ class CCusomer {
 이 방식을 사용하면 접근 시점에 객체가 생성된다. 따라서 생성자를 사용할 수 없지만 초기화 블록인 init은 들어갈 수 있다. 물론 클래스나 인터페이스를 상속할 수는 있다.  
 그렇다면 자바에서 object 선언으로의 접근은 어떻게 이루어질까?
 
-````
+````kotlin
 OCustomer.INSTANCE.getName( );
 ````
 
@@ -170,7 +172,7 @@ object 표현식은 선언과 달리 이름이 없으며 싱글톤이 아니다.
 따라서 object 표현식이 사용될 때마다 새로운 인스턴스가 생성된다.  
 결과적으로 이름이 없는 익명 내부 클래스의 형태를 이 표현법을 통해 만들 수 있다.
 
-````
+````kotlin
 open class Superman( ){
     open fun fly( ) = println("Flying in the air.")
 }
@@ -189,7 +191,7 @@ fun main( ) {
 
 딱 한 번만 구현되는 인터페이스 구현 클래스를 정의하기가 부담으러운 경우 다음과 같이 사용할 수 있다.
 
-````
+````kotlin
 interface Shape {
     fun onDraw( )   // 구현해야 할 메소드
 }
@@ -203,7 +205,7 @@ val triangle = object: Shape {
 
 객체는 필요하지만 상위 인터페이스나 클래스가 없는 경우 다음과 같이 사용할 수 있다.
 
-````
+````kotlin
 fun foo( ) {
     val adHoc = object {
         var x: Int = 0
@@ -215,7 +217,7 @@ fun foo( ) {
 
 이런 익명 객체는 지역이나 private 정의 영역에서만 사용할 수 있다.
 
-````
+````kotlin
 class C {
     private fun foo( ) = object {   // 반환자료형은 익명 객체 자료형
         val x: String = "x"

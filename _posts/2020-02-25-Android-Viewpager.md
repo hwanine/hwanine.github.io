@@ -1,11 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 뷰가 스와이핑 되는 뷰 페이저 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, ViewPager]
-thumbnail: "https://user-images.githubusercontent.com/57826388/75365170-2858c600-5900-11ea-9e63-2e0a5a43dda2.png
-"
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -49,7 +48,7 @@ excerpt_separator: <!--more-->
 특정 이미지를 클릭하면 해당 뷰페이저가 출력되어야 하니 사진에 대한 정보가 반드시 전달 되어야 한다.  
 따라서 다음과 같이 데이터도 같이 전달한다.
 
-````
+````kotlin
 recyclerAdapter =
             RecyclerAdapterPhoto(this, thumbnailList) {
                 thumbnailData, num, image -> 
@@ -78,7 +77,7 @@ recyclerAdapter =
 
 그럼 코드를 보자.
 
-````
+````kotlin
 public class PagerRecyclerAdapter(private val context: Context, var list: List<thumbnailData>, var tb: View, var bt: View) : PagerAdapter() {
     private var layoutInflater: LayoutInflater? = null
     private var check: Boolean = false
@@ -146,7 +145,7 @@ public class PagerRecyclerAdapter(private val context: Context, var list: List<t
 
 ### **뷰 페이저**
 
-````
+````kotlin
 class PhotoViewPager : AppCompatActivity() {
     
 
@@ -238,7 +237,7 @@ class PhotoViewPager : AppCompatActivity() {
 
 #### **메인 뷰페이저**
 
-````
+````xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -266,7 +265,7 @@ class PhotoViewPager : AppCompatActivity() {
 
 #### **내부 뷰페이저**
 
-````
+````xml
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"

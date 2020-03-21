@@ -1,10 +1,11 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 데이터베이스 Room DB 활용 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, AAC, Room]
 thubmnail: "https://user-images.githubusercontent.com/57826388/75561411-510cc700-5a8a-11ea-8d17-c1aba1e3ee29.png"
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -58,7 +59,7 @@ LiveData나 ViewModel은 다음시간에 아키텍쳐 패턴을 구성하면서 
 
 #### **Dependencies**
 
-````
+````kotlin
 dependencies {
     implementation "android.arch.persistence.room:runtime:1.1.1"
     kapt "android.arch.persistence.room:compiler:1.1.1"
@@ -75,7 +76,7 @@ dependencies {
 우리는 사진관리 프로그램을 개발하고 있다.  
 따라서 사진과 태그 두 종류의 엔터티를 사용할 것이다.
 
-````
+````kotlin
 @Entity(tableName = "photo_data")
 class PhotoData(@PrimaryKey(autoGenerate = true) var photo_id: Long,
                 @ColumnInfo(name = "name") var name : String,
@@ -86,7 +87,7 @@ class PhotoData(@PrimaryKey(autoGenerate = true) var photo_id: Long,
                 @ColumnInfo(name = "favorite") var favorite : Boolean)
 ````
 
-````
+````kotlin
 @Entity(tableName = "tag_data",
     primaryKeys = ["photo_id", "tag"],
     foreignKeys = [ForeignKey(entity = PhotoData::class,
@@ -106,7 +107,7 @@ class TagData(var photo_id: Long,
 DB에 접근해 질의를 수행할 DAO를 만든다.  
 다음과 같이 질의와 함께 정의하였다.
 
-````
+````kotlin
 @Dao
 interface PhotoData_Dao {
     @Insert(onConflict = REPLACE)
@@ -148,7 +149,7 @@ interface PhotoData_Dao {
 DB에 접근해 질의를 수행할 DAO를 만든다.  
 다음과 같이 질의와 함께 정의하였다.
 
-````
+````kotlin
 @Database(entities = [PhotoData::class, TagData::class], version = 1)
 @TypeConverters(Converters::class)
 abstract class PhotoDB: RoomDatabase() {

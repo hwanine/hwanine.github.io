@@ -30,7 +30,7 @@ excerpt_separator: <!--more-->
 코틀린에서도 어떤 클래스에서 하위 클래스를 생성할 수 있다. 상속의 개념을 말한다.  
 그 표현 방식은 조금 다르다.
 
-````
+````kotlin
 open class 기반 클래스 이름 {   // 묵시적으로 Any로 상속, open으로 파생 가능
     ...
 }
@@ -41,7 +41,7 @@ class 파생 클래스 이름 : 기반 클래스 이름(){   // 기반 클래스
 
 그럼 변수 언언과 클래스 상속을 구분할 수 있다.
 
-````
+````kotlin
 val somVal: Int   // 변수 선언
 open class BaseClass(someArgs: Int)   // 상속 가능한 클래스
 class SomeClass(someArgs: Int) : BaseClass(someArgs)   // 클래스 상속 선언
@@ -56,7 +56,7 @@ class someClass : BaseClass { ..constructor( ).. }   // 부 생성자를 사용�
 - 오버라이딩의 경우에는 코틀린에서는 반드시 override 키워드를 면시하여 재정의됨을 알려야한다.
 - 오버라이딩을 막고자 한다면 앞에 final 키워드 까지 사용해주면 된다.
 
-````
+````kotlin
 oepn class Bird {
     fun fly( ) { ... }   // 최종 메서드로 오버라이딩 불가
     open fun sing( ) { ... }   // open이 있으므로 오버라이딩 가능
@@ -71,7 +71,7 @@ class Lark( ) : Bird( ) {
 
 이너 클래스를 선언하고 바깥 클래스를 호출할 수 있다.
 
-````
+````kotlin
 open class Base {
     open val x: Int = 1
     open fun f( ) = println("Base Class")
@@ -107,7 +107,7 @@ Base 클래스의 f( )에 접근한다.
 <br>
 - 인터페이스에서도 참조할 수 있다.
 
-````
+````kotlin
 open class A {
     open fun f( ) = println("A Class f( )")
     fun a( ) = println("A Class a( )")
@@ -145,7 +145,7 @@ B Interface f( )
 
 클래스는 1개만 상속 가능하고 인터페이스는 여러 개를 지정할 수 있다. 이 때, f( )이 중복되고 있는데 이 경우에는 
 
-````
+````kotlin
 super<A>.f( )
 super<B>.f( )
 ````

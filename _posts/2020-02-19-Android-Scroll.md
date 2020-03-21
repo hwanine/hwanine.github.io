@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - Scroll시 상, 하단바 숨기기 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, CoordinatorLayout]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -58,7 +59,7 @@ Behavior을 통해 자식 뷰들 간에 다양한 상호작용을 제공한다.
 
 ### **build.gradle**
 
-````
+````kotlin
 dependencies {
     implementation 'com.google.android.material:material:1.0.0'
 }
@@ -70,7 +71,7 @@ dependencies {
 
 ### **values/styles.xml**
 
-````
+````xml
 <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/Select</item>
@@ -88,7 +89,7 @@ dependencies {
 
 ### **main_activity.xml**
 
-````
+````xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -167,7 +168,7 @@ dependencies {
 
 ### **values/strings.xml**
 
-````
+````xml
 <string name="appbar_scrolling_view_behavior" translatable="false">
         com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
     </string>

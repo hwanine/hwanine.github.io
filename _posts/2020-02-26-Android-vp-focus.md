@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 특정 뷰에 포커스 맞추기 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, ViewPager]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -31,7 +32,7 @@ excerpt_separator: <!--more-->
 
 우리가 저번에 뷰 페이저로 들어가기전에 인텐트로 화면전환시 데이터를 넘겼던 것에대해 기억하는가?  
 
-````
+````kotlin
 recyclerAdapter =
             RecyclerAdapterPhoto(this, thumbnailList) {
                 thumbnailData, num, image -> 
@@ -53,7 +54,7 @@ recyclerAdapter =
 
 <br>
 
-````
+````kotlin
 viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
 
             override fun onPageScrollStateChanged(state: Int) { }
@@ -77,7 +78,7 @@ viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
 
 <br>
 
-````
+````kotlin
 override fun onBackPressed() {
         val intent = Intent()
         intent.putExtra("index", check_index)
@@ -90,7 +91,7 @@ override fun onBackPressed() {
 
 <br>
 
-````
+````kotlin
 override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == Activity.RESULT_OK) {

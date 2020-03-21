@@ -1,11 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - BottomNavigationView 및 Fragment 관리 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/74731077-ac6cd700-528a-11ea-91f8-17acdb5e9ab9.png
-"
 tags: [Kotlin, 코틀린, JAVA, Android, IntelliJ, Fragment, BottomNavigationView]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -81,7 +80,7 @@ excerpt_separator: <!--more-->
 
 ### **주 액티비티 레이아웃**
 
-````
+````xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -165,7 +164,7 @@ excerpt_separator: <!--more-->
 
 ### **프래그먼트 / 레이아웃**
 
-````
+````kotlin
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -204,7 +203,7 @@ class LocationFragment : Fragment() {
 바텀 내비게이션 뷰에 메뉴를 등록해야한다.  
 메뉴는 res - menu - menu_bottom.xml 경로로 파일을 생성한다.
 
-````
+````xml
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -243,7 +242,7 @@ class LocationFragment : Fragment() {
 
 ### **바텀 내비게이션 뷰, 프래그먼트 연결**
 
-````
+````kotlin
 override fun onNavigationItemSelected(p0: MenuItem): Boolean {
         val tb: Toolbar = findViewById(R.id.main_toolbar)
         tb.visibility = View.VISIBLE

@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 리사이클러뷰에서 아이템 클릭 리스너 생성 및 처리 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, RecyclerView, Lamda]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -35,7 +36,7 @@ excerpt_separator: <!--more-->
 
 ### **어댑터 설정**
 
-````
+````kotlin
 class RecyclerAdapterPhoto(val context: FragmentActivity?, var list: List<thumbnailData>, var num: Int, val itemClick: (thumbnailData, Int) -> Unit) :
     RecyclerView.Adapter<RecyclerAdapterPhoto.Holder>()
 {
@@ -122,7 +123,7 @@ class RecyclerAdapterPhoto(val context: FragmentActivity?, var list: List<thumbn
 
 ### **액티비티에서 호출**
 
-````
+````kotlin
 class Main_PhotoView: AppCompatActivity() {
     private var recyclerAdapter : RecyclerAdapterPhoto?= null
     private var thumbnailList = listOf<thumbnailData>()

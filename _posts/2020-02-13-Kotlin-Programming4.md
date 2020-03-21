@@ -37,7 +37,7 @@ excerpt_separator: <!--more-->
 
 자바를 많이 사용해본 사람들은 다음과 같은 코드를 많이 접해봤을 것이다.
 
-````
+````kotlin
 ...
 public String getName( ){
     return name;
@@ -51,13 +51,13 @@ public String setName( ){
 
 하지만 코틀린에서는 단 한줄로 모든 코드를 축약할 수 있다.
 
-````
+````kotlin
 class Person(var name: String, var age: Int)
 ````
 
 동작을 확인하기에 앞서 클래스를 만들자.
 
-````
+````kotlin
 Class User(_id Int, _name: String, _age: Int) {
     val id: Int = _id
     var name: String = _name
@@ -67,13 +67,13 @@ Class User(_id Int, _name: String, _age: Int) {
 
 다음과 같이 간소화할 수 있다.
 
-````
+````kotlin
 class User(val id: Int, var name: String, var age: Int)
 ````
 
 이제 동작을 확인해보자.
 
-````
+````kotlin
 fun main( ){
     val user = User(1, "Lee", 26)
     val name = user.name   // getter에 의한 값 획득
@@ -85,7 +85,7 @@ fun main( ){
 
 - 게터와 세터를 지정할 수도 있다.
 
-````
+````kotlin
 var age: Int = _age
     get( ) = field
     set(value) {
@@ -102,7 +102,7 @@ field는 이름이 정해져있어서 변경할 수 없지만, value는 정해�
 위와 같은 지정 게터와 세터를 이용하여 커스텀할 수 있다.  
 예를 들어, 입력문자를 대문자로 바꾸는 등의 특정 연산의 경우 유용하다.
 
-````
+````kotlin
 set)(value){
     println("Changed")
     field = value.toUpperCase()
@@ -111,7 +111,7 @@ set)(value){
 
 - 만일 field를 사용하지 않을 경우, 임시로 프로퍼티를 생성하여 field 대신 사용할 수 있다.
 
-````
+````kotlin
 private var temp: String? = null
 get() = temp
 ````
@@ -131,7 +131,7 @@ lateinit을 사용하여 지연 초기화가 가능하다. 하지만 몇 가지 
 - var로 선언된 프로퍼티만 가능
 - 프로퍼티에 대한 게터와 세터를 사용할 수 없음.
 
-````
+````kotlin
 class Person {
     lateinit var name: String
 }
@@ -148,7 +148,7 @@ lazy를 이용한 지연 초기화도 가능하다. lazy는 val을 사용하는 
 - val 에서만 가능하다.
 - 값을 변경할 수 없다.
 
-````
+````kotlin
 val subject by lazy {
     println("lazy initialized")
     "kotlin"   // lazy 반환값
@@ -159,7 +159,7 @@ val subject by lazy {
 
 by를 사용하면 하나의 클래스가 다른 클래스에 위임하도록 선언하여 위임된 클래스가 가지는 멤버를 참조 없이 호출할 수 있게 된다.
 
-````
+````kotlin
 interface Car {
     fun go( ): String
 }

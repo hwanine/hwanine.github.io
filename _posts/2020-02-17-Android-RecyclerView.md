@@ -53,7 +53,7 @@ excerpt_separator: <!--more-->
 
 ### **Adapter**
 
-````
+````kotlin
     inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView!!) {
         //photo_view 변수 받아오기
         var photo = itemView?.findViewById<ImageView>(R.id.photo)
@@ -115,7 +115,7 @@ excerpt_separator: <!--more-->
 
 ### **Main**
 
-````
+````kotlin
 fun SetView(view : View) {
         recyclerView = view.findViewById<RecyclerView>(R.id.nameRecycleView)
         recyclerAdapter = RecyclerAdapter(activity, photoList)

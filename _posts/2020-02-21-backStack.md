@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 백 스택을 통한 백 버튼 내비게이션 뷰 아이템 활성화 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, BottomNavigationView, BackStack]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -38,7 +39,7 @@ excerpt_separator: <!--more-->
 프래그먼트에서 뒤로가기 버튼을 누르게되면 어떻게 될까? 당연히 앱이 종료되게 된다.  
 프래그먼트는 기본적으로 백스택이 쌓이지 않기 때문이다. 그래서 우선 우리가 해야할 것은 백스택을 저장하는 코드를 주어야 한다.
 
-````
+```kotlin
 override fun onNavigationItemSelected(p0: MenuItem): Boolean {
         val tb: Toolbar = findViewById(R.id.main_toolbar)
         tb.visibility = View.VISIBLE
@@ -72,7 +73,7 @@ override fun onNavigationItemSelected(p0: MenuItem): Boolean {
         transaction.commit()
         return true
     }
-````
+```
 
 위의 코드에서 눈여겨 볼 코드는 `addToBackStack(null)`이다.  
 이 코드가 바로 백스택에 저장하겠다는 코드다.
@@ -103,7 +104,7 @@ override fun onNavigationItemSelected(p0: MenuItem): Boolean {
 우선 현재 프래그먼트를 어떻게 불러오느냐?  
 프래그먼트는 만들어지기전에 태그를 붙일 수 있다.
 
-````
+````kotlin
 ...
 when(p0.itemId){
             R.id.menu_name ->{
@@ -139,7 +140,7 @@ when(p0.itemId){
 
 이제 현재 프래그먼트를 태그를 붙여 삽입했으니 현재 프래그먼트를 찾고 바텀 내비게이션 뷰 아이템을 활성화 해보자.
 
-````
+````kotlin
 fun updateBottomMenu(navigation: BottomNavigationView) {
         val tag1: Fragment? = supportFragmentManager.findFragmentByTag("name")
         val tag2: Fragment? = supportFragmentManager.findFragmentByTag("tag")
@@ -166,7 +167,7 @@ fun updateBottomMenu(navigation: BottomNavigationView) {
 
 이제 `onBackPressed()`를 재정의하여 여기에다가 함수를 넣어서 적용시켜보자.
 
-````
+````kotlin
 override fun onBackPressed() {
         super.onBackPressed()
         val bnv = findViewById<View>(R.id.bottomNavigationView) as BottomNavigationView
