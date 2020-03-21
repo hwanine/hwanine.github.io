@@ -4,6 +4,8 @@ toc: true
 toc_sticky: true
 excerpt: "NHN Forward 2019 in 창원 후기"
 tags: [NHN, NHN Forward, Naver, 개발자]
+categories:
+  - Conference
 ---
 
 * **연구주제** : NHN Forward 2019 in 창원 후기
