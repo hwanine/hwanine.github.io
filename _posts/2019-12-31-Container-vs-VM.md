@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Web
 title: Container VS VM
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://lh3.googleusercontent.com/53UBfkTd__oJLlxXMbYVhHBBXtnRhkQ7fhUplq1eF7LHp-rTPbVADRbQQPugcZtK-TGoymFE1OQwC0lkvCUbWNi8j2MvUUdTIK5rPsfa4AtmA2k2M9s36ZliRCeTkmSbZ7DdHphU"
 tags: [Container, Virtual machine, Docker]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 # Container VS Virtual Machine

@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - BlockChain
 title: 블록체인? 비트코인?
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/72155680-fa263200-33f6-11ea-8bdf-9122ef6364eb.png"
 tags: [BlockChain, Data, Bitcoin]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 # 블록체인의 개념 정리

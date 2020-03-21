@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Linux
 title: 리눅스 명령어 학습 및 실습
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Linux, Unix, Ubuntu]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 # 리눅스 명령어 학습 및 실습

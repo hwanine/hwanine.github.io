@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Web
 title: 웹 & HTTP & Docker
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://previews.123rf.com/images/ihorsvetiukha/ihorsvetiukha1808/ihorsvetiukha180800017/112241820-world-wide-web-global-network-structure-with-planet-map-on-background-vector-illustration.jpg"
 tags: [Web, HTTP, Docker]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 # 웹과 HTTP, 그리고 Docker
