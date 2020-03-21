@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - AI
 title: 딥러닝 입문 가이드 (NHN Forward 2019) (4)
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/73757402-89332980-47ac-11ea-87f2-e36bd15b5d69.png"
 tags: [Machine Learing, Deep Learning, Pytorch, CNN]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 

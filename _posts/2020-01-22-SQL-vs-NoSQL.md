@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Database
 title: SQL vs NoSQL
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/72827555-5a9e5480-3cbe-11ea-803a-0da2ff6bc815.png"
 tags: [SQL, RDBMS, DBMS, DB, NOSQL]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 # SQL vs NoSQL

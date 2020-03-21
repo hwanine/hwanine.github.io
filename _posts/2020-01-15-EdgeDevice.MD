@@ -1,11 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Cloud
 title: 새로운 클라우드 혁명 엣지 디바이스
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/72413457-2ead3b80-37b3-11ea-99dd-59de83b31b02.png
-"
 tags: [AWS, Cloud, EdgeComputing, EdgeDevice]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 # 새로운 클라우드 혁명 엣지 디바이스

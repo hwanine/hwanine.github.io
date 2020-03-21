@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Git
 title: Git error:failed to push some refs to 'XXX.git'
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [VS Code, Remote Development]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 # Git error:failed to push some refs to 'XXX.git'

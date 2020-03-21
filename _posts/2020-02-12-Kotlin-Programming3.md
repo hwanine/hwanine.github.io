@@ -1,11 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Kotlin
 title: IntelliJ에서의 코틀린 프로그래밍 - 흐름제어, 클래스, 객체 (2)
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/74135332-7b0f5e00-4c2f-11ea-9f3f-908d1f0a4695.png
-"
 tags: [Kotlin, 코틀린, JAVA, Android, IntelliJ]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 

@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - VS Code
 title: VScode liveshare를 활용한 협업
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/73716645-ef8f5c00-475a-11ea-9070-1a19cce90f82.png"
 tags: [vscode, Visual studio code, Live share]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 

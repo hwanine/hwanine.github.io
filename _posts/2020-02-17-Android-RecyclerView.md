@@ -1,11 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - RecyclerView의 사용법과 원리 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/74630301-a5b46600-519d-11ea-823b-a2784270ad14.png
-"
 tags: [Kotlin, 코틀린, JAVA, Android, RecyclerView]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 

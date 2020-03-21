@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Git
 title: Sourcetree
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/72244818-680a6d80-3632-11ea-8049-1d71a4e031f5.png"
 tags: [Git, Sourcetree, SSH]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 # 소스트리를 이용한 깃 사용
