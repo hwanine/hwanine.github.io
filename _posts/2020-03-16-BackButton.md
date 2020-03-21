@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 프래그먼트에서 뒤로가기 두번 눌러서 앱 종료하기 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, Fragment, Backbutton]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -29,7 +30,7 @@ excerpt_separator: <!--more-->
 
 ## 본론
    
-````
+````Kotlin
 private final var FINISH_INTERVAL_TIME: Long = 2000
 private var backPressedTime: Long = 0
 ````
@@ -41,7 +42,7 @@ backPressedTime은 첫번째 뒤로가기 버튼이 눌린 시간을 저장한�
 
 <br>
 
-````
+````Kotlin
  override fun onBackPressed() {
         if(supportFragmentManager.backStackEntryCount == 0) {
             var tempTime = System.currentTimeMillis();

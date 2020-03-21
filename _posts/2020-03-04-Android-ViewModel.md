@@ -1,11 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - AAC ViewModel (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, AAC, LiveData, ViewModel]
-author: Jae-Hwan Lee
-thubmnail: "https://user-images.githubusercontent.com/57826388/75570497-9a651280-5a9a-11ea-97aa-29750175228b.png"
-
 excerpt_separator: <!--more-->
 ---
 
@@ -69,7 +68,7 @@ B액티비티에서 A의 객체를 다시 가져오면 새 객체가 생성된�
 
 다음 코드는 뷰 모델 뿐만아니라 Repository패턴에 ViewModel을 덜어서 사용하도록 작성되었다.
 
-````
+````Kotlin
 class PhotoViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repo : PhotoRepository = PhotoRepository(application)
@@ -115,7 +114,7 @@ class PhotoViewModel(application: Application) : AndroidViewModel(application) {
 }
 ````
 
-````
+````Kotlin
 class PhotoRepository(application: Application) {
    val photoDao : PhotoData_Dao
 

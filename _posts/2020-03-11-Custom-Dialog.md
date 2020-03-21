@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 연도와 월만 선택하는 Custom Datepicker Dialog 생성 및 활용 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, Dialog]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -32,7 +33,7 @@ excerpt_separator: <!--more-->
 DatePicker도 다이얼로그의 일종이기 때문에 원리는 똑같다.  
 다만 그 다이얼로그를 DatePicker처럼 만들어주어야 한다.
 
-````
+````Kotlin
 class YearMonthPickerDialog<Button : View?>(v: View, tag: String): DialogFragment() {
     private var listener: DatePickerDialog.OnDateSetListener? = null
     private final val MAX_YEAR = 2099
@@ -103,7 +104,7 @@ class YearMonthPickerDialog<Button : View?>(v: View, tag: String): DialogFragmen
 
 <br>
 
-````
+````Kotlin
 fun dialogCreate(view: View) {
         val pd: YearMonthPickerDialog<View> = YearMonthPickerDialog(view, "search")
         pd.show(supportFragmentManager, "YearMonthPickerTest")

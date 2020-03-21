@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - Activity에서 Parcelable을 이용해 ArrayList를 전달하고 받아오기 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, Activity, Intent, Parcelable]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -36,7 +37,7 @@ Parcelable은 인터페이스이며, Parcel에 객체를 write/read 하도록 �
 
 다음 메소드를 사용해서 다음과 같이 데이터를 넘겨준다.
 
-````
+````Kotlin
 private var PhotoList = arrayListOf<PhotoData>()
 intent.putParcelableArrayListExtra("photo_list", PhotoList)
 ````
@@ -53,7 +54,7 @@ intent.putParcelableArrayListExtra("photo_list", PhotoList)
 
 리스트를 전달하려면 리스트에 담긴 데이터에서 `Parcelable`를 구현해야한다.
 
-````
+````Kotlin
 @Entity(tableName = "photo_data")
 class PhotoData(@PrimaryKey var photo_id: Long,
                 @ColumnInfo(name = "name") var name : String,
@@ -100,7 +101,7 @@ class PhotoData(@PrimaryKey var photo_id: Long,
 
 여기서 Date 형식으로 된 `date_info`의 경우 입/출력시 변환을 해주어야 한다.
 
-````
+````Kotlin
 fun Parcel.writeDate(date: Date?) {
     writeLong(date?.time ?: -1)
 }
@@ -119,7 +120,7 @@ fun Parcel.readDate(): Date? {
 `getSerializableExtra()` 메소드를 이용한다.  
 전달받을 때에는 다음과 같이 코드를 작성한다.
 
-````
+````Kotlin
 photoList = intent.getSerializableExtra("photo_list") as ArrayList<PhotoData>
 ````
 

@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 위험 권한, 권한 전용 팝업 생성 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, Dialog, Permission]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -33,7 +34,7 @@ excerpt_separator: <!--more-->
 
 ### **위험 권한, 권한 전용 팝업**
 
-````
+````Kotlin
  private fun checkPermission() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) !== PackageManager.PERMISSION_GRANTED)
         {

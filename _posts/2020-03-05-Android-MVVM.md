@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - RoomDB를 이용한 MVVM 아키텍처 디자인 패턴 구축 (Kotlin) (1)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, AAC, LiveData, ViewModel]
-author: Jae-Hwan Lee
-thubmnail: "https://user-images.githubusercontent.com/57826388/75573710-be2b5700-5aa0-11ea-8a9e-bb1aa750cd4c.png"
 excerpt_separator: <!--more-->
 ---
 

@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 여러 개의 입력을 받는 Custom Dialog 만들기 (2)(Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/76698025-65370200-66e1-11ea-95b8-8a7a7f34a699.png"
 tags: [Kotlin, 코틀린, JAVA, Android, Dialog]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -45,7 +45,7 @@ excerpt_separator: <!--more-->
 
 다음은 다이얼로그 클래스와 다이얼로그를 생성하는 메소드를 담고 있다.
 
-````
+````Kotlin
 class tagInsertDialog(context: Context, v: View, vm: PhotoViewModel, index: Int, tag_name : AppCompatTextView): DialogFragment() {
 
     private val contextdlg = context
@@ -76,7 +76,7 @@ class tagInsertDialog(context: Context, v: View, vm: PhotoViewModel, index: Int,
 
 클릭 리스너를 모아놓은 메소드도 하나 만들자.
 
-````
+````Kotlin
 private fun insert_tag_click(view: View, dlg: androidx.appcompat.app.AlertDialog) {
         tag_addRemove(view)
         insert_saveCancel(view, dlg)
@@ -89,7 +89,7 @@ private fun insert_tag_click(view: View, dlg: androidx.appcompat.app.AlertDialog
 
 여기서는 다이얼로그의 `+ -` 조작에 대한 리스너를 담는다.
 
-````
+````Kotlin
 private fun tag_addRemove(view: View) {
         view.tag1_add.setOnClickListener{
             view.tag1_add.visibility = View.INVISIBLE
@@ -143,7 +143,7 @@ private fun tag_addRemove(view: View) {
 
 저장 및 취소를 누를 시, 행동에 대한 리스너를 정의해준다.
 
-````
+````Kotlin
 private fun insert_saveCancel(view: View, dlg: androidx.appcompat.app.AlertDialog) {
         view.tag_save.setOnClickListener {
             CoroutineScope(Dispatchers.Main).launch {
@@ -183,7 +183,7 @@ private fun insert_saveCancel(view: View, dlg: androidx.appcompat.app.AlertDialo
 
 다이얼로그를 처음 열 때, DB에서 정보를 가져와 다이얼로그에 할당하는 메소드다.  
 이 부분에서는 각자의 DB참조 코드를 사용하면된다.
-````
+````Kotlin
 fun tagsInit(view: View, tags: List<String>) {
         if(tags.size >= 1) { view.tag1_edit.setText( tags.elementAt(0)) }
         if(tags.size >= 2) {
@@ -213,7 +213,7 @@ fun tagsInit(view: View, tags: List<String>) {
 이제 레이아웃과 다이얼로그 클래스가 모두 작성되었다.  
 직접 호출을 해보자.
 
-````
+````Kotlin
 val popupInputDialogView: View = layoutInflater.inflate(R.layout.tag_diaglog, null)
         val dlg: tagInsertDialog = tagInsertDialog(this, popupInputDialogView, vm, index, tag_name)
         dlg.show(supportFragmentManager, "tagInsertDialog")

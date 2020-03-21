@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - Firebase 이미지 라벨 지정 기기별 API 활용 (2)(Kotlin)
-thumbnail: "https://user-images.githubusercontent.com/57826388/76699068-f495e280-66ec-11ea-8510-53e8609802f4.png"
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, Firebase, API]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -35,7 +35,7 @@ excerpt_separator: <!--more-->
 
 앱 수준, Gradle 파일에 ML Kit를 다음과 같이 등록해준다.
 
-````
+````Kotlin
 dependencies {
   // ...
 
@@ -49,7 +49,7 @@ apply plugin: 'com.google.gms.google-services'
 
 추가로 기기에 머신러닝 모델을 자동으로 다운로드 하도록 앱을 설정한다.
 
-````
+````xml
 <application ...>
   ...
   <meta-data
@@ -65,7 +65,7 @@ apply plugin: 'com.google.gms.google-services'
 
 먼저 `FirebaseVisionImageLabeler`의 인스턴스를 가져온다.
 
-````
+````Kotlin
 val labeler = FirebaseVision.getInstance().getOnDeviceImageLabeler()
 ````
 
@@ -73,7 +73,7 @@ val labeler = FirebaseVision.getInstance().getOnDeviceImageLabeler()
 
 그 후, 이미지를 processImage() 메소드에 전달한다.
 
-````
+````Kotlin
 labeler.processImage(image)
     .addOnSuccessListener { labels ->
       // Task completed successfully
@@ -91,7 +91,7 @@ labeler.processImage(image)
 
 다음과 같이 전달한 이미지의 객체 정보를 출력할 수 있다.
 
-````
+````Kotlin
 for (label in labels) {
   val text = label.text
   val entityId = label.entityId

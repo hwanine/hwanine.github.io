@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - Google Map API 설치부터 심화 활용까지 (설치) (1) (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, Google, API]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -85,7 +86,7 @@ Maps SDK for Android 항목을 클릭한다.
 
 ### **안드로이드 스튜디오 설정**
 
-````
+````xml
 <meta-data
     android:name="com.google.android.geo.API_KEY"
     android:value="@string/google_maps_key" />
@@ -103,7 +104,7 @@ Maps SDK for Android 항목을 클릭한다.
 
 이제 앱 수준, Gradle 파일에 구글 플레이 라이브러리를 추가한 후, async를 눌러준다.
 
-````
+````Kotlin
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -124,7 +125,7 @@ dependencies {
 
 <br>
 
-````
+````Kotlin
 class MapFragment : Fragment(),  OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
@@ -154,7 +155,7 @@ class MapFragment : Fragment(),  OnMapReadyCallback {
 
 <br>
 
-````
+````xml
 ?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"

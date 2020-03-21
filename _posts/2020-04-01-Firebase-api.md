@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - Firebase ML Kit을 활용한 이미지 라벨 지정 기기별 API 활용 (1)(Kotlin)
-thumbnail: "https://user-images.githubusercontent.com/57826388/76699068-f495e280-66ec-11ea-8510-53e8609802f4.png"
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, Firebase, API]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -85,7 +85,7 @@ https://console.firebase.google.com/
 
 그 후, 앱에서 사용할 수 있도록 프로젝트 수준, gradle 파일에 다음과 같이 추가한다.
 
-````
+````Kotlin
 buildscript {
 
   repositories {
@@ -116,7 +116,7 @@ allprojects {
 
 마찬가지로 앱 수준, Gradle 파일에도 추가한다.
 
-````
+````Kotlin
 apply plugin: 'com.android.application'
 
 android {
@@ -133,7 +133,7 @@ apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle p
 
 마지막으로 Firebase SDK를 추가한다. 앱 수준, Gradle 파일에 다음과 같이 추가한다.
 
-````
+````Kotlin
 dependencies {
  // ...
  implementation 'com.google.firebase:firebase-core:17.0.0'

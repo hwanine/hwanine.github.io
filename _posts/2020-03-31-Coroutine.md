@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 코루틴으로 간단하게 비동기 제어하기 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, Coroutine]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -50,7 +51,7 @@ excerpt_separator: <!--more-->
 만약 비동기 프로그래밍을 사용할 떄, 특정 구간을 제어하고 싶을 때가 있다.  
 이 경우, 코루틴을 이용하면 간단한 코드로 해결할 수 있다.
 
-````
+````Kotlin
 view.tag_save.setOnClickListener {
                     vm.DeleteTag(Main_PhotoView.list[index].photo_id)
                 if (view.tag1_edit.text.toString() != "") {
@@ -80,7 +81,7 @@ view.tag_save.setOnClickListener {
 
 다음의 코드에서 ,
 
-````
+````Kotlin
 vm.DeleteTag(Main_PhotoView.list[index].photo_id)
 ````
 
@@ -92,7 +93,7 @@ vm.DeleteTag(Main_PhotoView.list[index].photo_id)
 
 이제는 코루틴을 적용해보자.
 
-````
+```kotlin
 view.tag_save.setOnClickListener {
             CoroutineScope(Dispatchers.Main).launch {
                 CoroutineScope(Dispatchers.Default).async {
@@ -122,7 +123,7 @@ view.tag_save.setOnClickListener {
                 dlg.cancel()
             }
         }
-````
+```
 
  `CoroutineScope(Dispatchers.Main).launch` 는 메인 쓰레드로 할당된다.  
  `CoroutineScope(Dispatchers.Default)`는 서브 쓰레드로 할당되어 메인 쓰레드 안에서 동작한다.  

@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 여러 개의 입력을 받는 Custom Dialog 만들기 (1) (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/76698025-65370200-66e1-11ea-95b8-8a7a7f34a699.png"
 tags: [Kotlin, 코틀린, JAVA, Android, Dialog]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -40,7 +40,7 @@ excerpt_separator: <!--more-->
 
 레이아웃은 기본적으로 `TableLayout`을 사용하고 추가로 사용자가 필요한 UI가 있는 경우, 다른 레이아웃으로 감싸서 사용할 수 있다.
 
-````
+````xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     android:layout_width="match_parent"

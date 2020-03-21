@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - AAC LiveData (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, AAC, LiveData]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -84,7 +85,7 @@ LiveData를 확장하는 클래스를 만들어 싱글톤 패턴으로 관리를
 
 LiveData는 ViewModel과 함께 사용되는 경우가 대부분이기 때문에, 예제 코드 또한 ViewModel이 포함된 MVVM 아키텍처 패턴을 기반으로 작성되었다.
 
-````
+````Kotlin
 class PhotoViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repo : PhotoRepository = PhotoRepository(application)
@@ -127,7 +128,7 @@ class PhotoViewModel(application: Application) : AndroidViewModel(application) {
 
 2. 액티비티나 프래그먼트가 활성화 되자마자 표시할 수 있는 데이터를 가질 수 있기 때문에 컴포넌트는 STARTED 상태가 되자마자 LiveData 객체로부터 가장 최신의 값을 수신해야 한다.
 
-````
+````Kotlin
 ...
 
 var vm = ViewModelProviders.of(this).get(PhotoViewModel::class.java)

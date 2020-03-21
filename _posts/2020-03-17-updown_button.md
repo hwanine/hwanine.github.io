@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - 리사이클러뷰에서 최상단, 최하단으로 이동하기 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, RecyclerView]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -30,7 +31,7 @@ excerpt_separator: <!--more-->
 
 ### **레이아웃**
 
-````
+````xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -114,7 +115,7 @@ excerpt_separator: <!--more-->
 
 ### **버튼 리스너**
 
-````
+````Kotlin
  fun updown_Listener(view: RecyclerView?) {
         up_button.setOnClickListener {
             view?.smoothScrollToPosition(0)

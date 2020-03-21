@@ -1,10 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - Firebase 텍스트 번역기 기기별 API 활용 (Kotlin)
-thumbnail: "https://user-images.githubusercontent.com/57826388/76699068-f495e280-66ec-11ea-8510-53e8609802f4.png"
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, Firebase, API]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -36,7 +36,7 @@ excerpt_separator: <!--more-->
 
 앱 수준, Gradle 파일에 ML Kit를 다음과 같이 등록해준다.
 
-````
+````Kotlin
 dependencies {
   // ...
 
@@ -52,7 +52,7 @@ apply plugin: 'com.google.gms.google-services'
 
 다음과 같이 번역할 언어, 완료할 언어를 설정한다.
 
-````
+````Kotlin
 val options = FirebaseTranslatorOptions.Builder()
         .setSourceLanguage(FirebaseTranslateLanguage.EN)
         .setTargetLanguage(FirebaseTranslateLanguage.DE)
@@ -66,7 +66,7 @@ val englishGermanTranslator = FirebaseNaturalLanguage.getInstance().getTranslato
 
 번역 모델 다운로드를 확인한다. WIFI를 사용하는 경우에만 다운로드 한다.
 
-````
+````Kotlin
 englishGermanTranslator.downloadModelIfNeeded()
         .addOnSuccessListener {
             // Model downloaded successfully. Okay to start translating.
@@ -84,7 +84,7 @@ englishGermanTranslator.downloadModelIfNeeded()
 
 이제 번역기를 동작시킨다. 다운로드 된 것이 확인되면 텍스트 문자열을 전달하여 번역이 실행된다.
 
-````
+````Kotlin
 englishGermanTranslator.translate(text)
         .addOnSuccessListener { translatedText ->
             // Translation successful.
@@ -104,7 +104,7 @@ englishGermanTranslator.translate(text)
 
 다음 코드는 로딩 액티비티에서 명시적으로 다운로드를 받게한다.
 
-````
+````Kotlin
 val modelManager = FirebaseModelManager.getInstance()
         val Model = FirebaseTranslateRemoteModel.Builder(FirebaseTranslateLanguage.KO).build()
         val conditions = FirebaseModelDownloadConditions.Builder()
@@ -146,7 +146,7 @@ val modelManager = FirebaseModelManager.getInstance()
 
 이전에 했던 ML 이미지 라벨 지정 API에서 출력된 영어로 된 태그에 번역모델 API를 중첩 사용하여 출력해보았다.
 
-````
+````Kotlin
 val options = FirebaseTranslatorOptions.Builder()
                 .setSourceLanguage(FirebaseTranslateLanguage.EN)
                 .setTargetLanguage(FirebaseTranslateLanguage.KO)

@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - RecyclerView에서 스크롤 할 때마다 특정 뷰 숨기기 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, RecyclerView, Scroll]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -35,7 +36,7 @@ excerpt_separator: <!--more-->
 본 예제에서는 상단바, 프레임으로 레이아웃이 이루어진다.  
 버튼은 프레임 위에 나타나게된다.
 
-````
+````xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -122,7 +123,7 @@ excerpt_separator: <!--more-->
 예제에서 temp를 준 이유는 처음 뷰에 들어오면 알아서 onScrolled가 호출됨을 확인했다.  
 그로 인해, 스크롤 하면 버튼이 나타났다가 다시 사라기 때문에 처음 들어왔을 때, temp를 주어 관리한다.
 
-````
+````Kotlin
 val onScrollListener = object:RecyclerView.OnScrollListener() {
             var temp: Int = 0
             override fun onScrolled(@NonNull recyclerView:RecyclerView, dx:Int, dy:Int) {
@@ -148,7 +149,7 @@ val onScrollListener = object:RecyclerView.OnScrollListener() {
 
 다음과 같이 리스너와 뷰를 연결해준다.
 
-````
+````Kotlin
 recyclerView?.setOnScrollListener(onScrollListener)
 ````
 

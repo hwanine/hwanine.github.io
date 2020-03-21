@@ -1,9 +1,10 @@
 ---
-layout: post
+toc: true
+toc_sticky: true
+categories:
+  - Android
 title: Android - Toolbar, Fragment 문제 및 해결 (Kotlin)
-feature-img: "assets/img/pexels/computer.jpeg"
 tags: [Kotlin, 코틀린, JAVA, Android, Toolbar]
-author: Jae-Hwan Lee
 excerpt_separator: <!--more-->
 ---
 
@@ -46,7 +47,7 @@ excerpt_separator: <!--more-->
 이것은 툴바를 확장시켜주는 메소드다.  
 주의사항으로는 툴바가 아닌 앱바의 메소드기 떄문에 툴바보다 상위 클래스인 앱바 인스턴스로 호출해야한다!
 
-````
+````Kotlin
 ab.setExpanded(true, false)
 ````
 
