@@ -24,8 +24,8 @@ description              : ""
 url                      : "https://hwanine.github.io"
 baseurl                  : ""
 repository               : "hwanine/hwanine.github.io"
-teaser                   : "/assets/images/500x300.png"
-logo                     : "/assets/images/88x88.png"
+teaser                   : "/assets/images/hd.jpg"
+logo                     : "/assets/images/computer.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true
 words_per_minute         : 200
