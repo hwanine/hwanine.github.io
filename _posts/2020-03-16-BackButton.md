@@ -30,7 +30,7 @@ excerpt_separator: <!--more-->
 
 ## 본론
    
-````Kotlin
+````kotlin
 private final var FINISH_INTERVAL_TIME: Long = 2000
 private var backPressedTime: Long = 0
 ````
@@ -42,7 +42,7 @@ backPressedTime은 첫번째 뒤로가기 버튼이 눌린 시간을 저장한�
 
 <br>
 
-````Kotlin
+````kotlin
  override fun onBackPressed() {
         if(supportFragmentManager.backStackEntryCount == 0) {
             var tempTime = System.currentTimeMillis();

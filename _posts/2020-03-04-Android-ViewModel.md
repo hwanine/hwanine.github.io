@@ -68,7 +68,7 @@ B액티비티에서 A의 객체를 다시 가져오면 새 객체가 생성된�
 
 다음 코드는 뷰 모델 뿐만아니라 Repository패턴에 ViewModel을 덜어서 사용하도록 작성되었다.
 
-````Kotlin
+````kotlin
 class PhotoViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repo : PhotoRepository = PhotoRepository(application)
@@ -114,7 +114,7 @@ class PhotoViewModel(application: Application) : AndroidViewModel(application) {
 }
 ````
 
-````Kotlin
+````kotlin
 class PhotoRepository(application: Application) {
    val photoDao : PhotoData_Dao
 

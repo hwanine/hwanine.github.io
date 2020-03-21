@@ -35,7 +35,7 @@ excerpt_separator: <!--more-->
 좌/우 스와이프만 다룰 것이기 때문에 onFling 함수를 재정의한다.
 
 
-````Kotlin
+````kotlin
 class SwipeGesture(v: View) : GestureDetector.OnGestureListener {
     private val SWIPE_THRESHOLD = 100
     private val SWIPE_VELOCITY_THRESHOLD = 100
@@ -99,7 +99,7 @@ class SwipeGesture(v: View) : GestureDetector.OnGestureListener {
 
 다음과 같이 람다식으로 이벤트에 대한 동작을 달아준다.
 
-````Kotlin
+````kotlin
 val gestureListener: SwipeGesture = SwipeGesture(calendar_allheader)
         val gesturedetector = GestureDetector(calendar_allheader.context, gestureListener)
         calendar_allheader.setOnTouchListener { v, event ->

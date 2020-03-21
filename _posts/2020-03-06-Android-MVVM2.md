@@ -45,7 +45,7 @@ excerpt_separator: <!--more-->
 DB에 접근해 질의를 수행하는 DAO를 만든다.  
 다음과 같이 질의와 함께 정의한다.
 
-````Kotlin
+````kotlin
 interface PhotoData_Dao {
     @Insert(onConflict = REPLACE)
     fun insert(photoData: PhotoData) : Long
@@ -104,7 +104,7 @@ interface PhotoData_Dao {
 
 데이터베이스를 정의하고 생성한다. DB 모델에 대한 정보가 들어간다.
 
-````Kotlin
+````kotlin
 @Database(entities = [PhotoData::class, TagData::class], version = 1)
 @TypeConverters(Converters::class)
 abstract class PhotoDB: RoomDatabase() {
@@ -136,7 +136,7 @@ abstract class PhotoDB: RoomDatabase() {
 
 뷰 모델을 정의한다. 뷰에서 직접 데이터를 참조하기도 하고, 뷰 모델에서 뷰를 감시하기도 한다.
 
-````Kotlin
+````kotlin
 class PhotoViewModel(application: Application) : AndroidViewModel(application) {
     private val repo : PhotoRepository = PhotoRepository(application)
 
@@ -201,7 +201,7 @@ class PhotoViewModel(application: Application) : AndroidViewModel(application) {
 
 뷰에서 데이터를 참조할 떄, 뷰 모델을 먼저 참조하고 뷰 모델이 리파지터리를 통해 데이터를 가져오도록 한다.
 
-````Kotlin
+````kotlin
 class PhotoRepository(application: Application) {
    val photoDao : PhotoData_Dao
 
@@ -296,7 +296,7 @@ class PhotoRepository(application: Application) {
 
 DB 엔터티나 기타 데이터를 생성하고 정의한다. 
 
-````Kotlin
+````kotlin
 @Entity(tableName = "photo_data")
 class PhotoData(@PrimaryKey(autoGenerate = true) var photo_id: Long,
                 @ColumnInfo(name = "name") var name : String,
@@ -328,7 +328,7 @@ data class thumbnailData( var thumbnail_path: String,
 
 다음과 같이 뷰에서 뷰 모델과 연결한다.
 
-````Kotlin
+````kotlin
 var vm = ViewModelProviders.of(this).get(PhotoViewModel::class.java)
             vm.getTagDir().observe(this,
                 Observer<List<PhotoData>> { t -> PhotoList =

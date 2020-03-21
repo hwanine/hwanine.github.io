@@ -33,7 +33,7 @@ excerpt_separator: <!--more-->
 DatePicker도 다이얼로그의 일종이기 때문에 원리는 똑같다.  
 다만 그 다이얼로그를 DatePicker처럼 만들어주어야 한다.
 
-````Kotlin
+````kotlin
 class YearMonthPickerDialog<Button : View?>(v: View, tag: String): DialogFragment() {
     private var listener: DatePickerDialog.OnDateSetListener? = null
     private final val MAX_YEAR = 2099
@@ -104,7 +104,7 @@ class YearMonthPickerDialog<Button : View?>(v: View, tag: String): DialogFragmen
 
 <br>
 
-````Kotlin
+````kotlin
 fun dialogCreate(view: View) {
         val pd: YearMonthPickerDialog<View> = YearMonthPickerDialog(view, "search")
         pd.show(supportFragmentManager, "YearMonthPickerTest")

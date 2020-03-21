@@ -51,7 +51,7 @@ excerpt_separator: <!--more-->
 만약 비동기 프로그래밍을 사용할 떄, 특정 구간을 제어하고 싶을 때가 있다.  
 이 경우, 코루틴을 이용하면 간단한 코드로 해결할 수 있다.
 
-````Kotlin
+````kotlin
 view.tag_save.setOnClickListener {
                     vm.DeleteTag(Main_PhotoView.list[index].photo_id)
                 if (view.tag1_edit.text.toString() != "") {
@@ -81,7 +81,7 @@ view.tag_save.setOnClickListener {
 
 다음의 코드에서 ,
 
-````Kotlin
+````kotlin
 vm.DeleteTag(Main_PhotoView.list[index].photo_id)
 ````
 

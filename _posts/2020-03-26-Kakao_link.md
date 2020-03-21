@@ -55,7 +55,7 @@ V1 기준으로 작성된 예제들이 많던데 이제 V1 카카오링크는 �
 
 우선 앱 그래들에서 다음과 같이 링크 sdk를 추가한다.
 
-````Kotlin
+````kotlin
 //KAKAO SDK
 implementation group: 'com.kakao.sdk', name: 'kakaolink', version: project.KAKAO_SDK_VERSION
 ````
@@ -64,7 +64,7 @@ implementation group: 'com.kakao.sdk', name: 'kakaolink', version: project.KAKAO
 
 그리고 프로퍼티의 마지막에 다음을 추가한다.
 
-````Kotlin
+````kotlin
 KAKAO_SDK_GROUP=com.kakao.sdk
 KAKAO_SDK_VERSION=1.27.0
 ````
@@ -73,7 +73,7 @@ KAKAO_SDK_VERSION=1.27.0
 
 마지막으로 프로젝트 그래들에서도 sdk를 사용하기위해 다음과 같이 명시해준다.
 
-````Kotlin
+````kotlin
 subprojects {
     repositories {
         mavenCentral()
@@ -139,7 +139,7 @@ key는 조금 전에 개발자 페이지에서 확인했던 네이티브 키를 
 
 특정 버튼과 연결하여 공유할 템플릿 소스를 다음의 예제로 입력해준다.
 
-````Kotlin
+````kotlin
 fun kakaoLink() {
         val params = FeedTemplate
             .newBuilder(

@@ -85,7 +85,7 @@ https://console.firebase.google.com/
 
 그 후, 앱에서 사용할 수 있도록 프로젝트 수준, gradle 파일에 다음과 같이 추가한다.
 
-````Kotlin
+````kotlin
 buildscript {
 
   repositories {
@@ -116,7 +116,7 @@ allprojects {
 
 마찬가지로 앱 수준, Gradle 파일에도 추가한다.
 
-````Kotlin
+````kotlin
 apply plugin: 'com.android.application'
 
 android {
@@ -133,7 +133,7 @@ apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle p
 
 마지막으로 Firebase SDK를 추가한다. 앱 수준, Gradle 파일에 다음과 같이 추가한다.
 
-````Kotlin
+````kotlin
 dependencies {
  // ...
  implementation 'com.google.firebase:firebase-core:17.0.0'

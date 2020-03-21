@@ -35,7 +35,7 @@ excerpt_separator: <!--more-->
 
 앱 수준, Gradle 파일에 ML Kit를 다음과 같이 등록해준다.
 
-````Kotlin
+````kotlin
 dependencies {
   // ...
 
@@ -65,7 +65,7 @@ apply plugin: 'com.google.gms.google-services'
 
 먼저 `FirebaseVisionImageLabeler`의 인스턴스를 가져온다.
 
-````Kotlin
+````kotlin
 val labeler = FirebaseVision.getInstance().getOnDeviceImageLabeler()
 ````
 
@@ -73,7 +73,7 @@ val labeler = FirebaseVision.getInstance().getOnDeviceImageLabeler()
 
 그 후, 이미지를 processImage() 메소드에 전달한다.
 
-````Kotlin
+````kotlin
 labeler.processImage(image)
     .addOnSuccessListener { labels ->
       // Task completed successfully
@@ -91,7 +91,7 @@ labeler.processImage(image)
 
 다음과 같이 전달한 이미지의 객체 정보를 출력할 수 있다.
 
-````Kotlin
+````kotlin
 for (label in labels) {
   val text = label.text
   val entityId = label.entityId

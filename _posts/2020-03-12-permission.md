@@ -34,7 +34,7 @@ excerpt_separator: <!--more-->
 
 ### **위험 권한, 권한 전용 팝업**
 
-````Kotlin
+````kotlin
  private fun checkPermission() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) !== PackageManager.PERMISSION_GRANTED)
         {
@@ -68,7 +68,7 @@ excerpt_separator: <!--more-->
     }
 ````
 
-````
+````kotlin
 override fun onRequestPermissionsResult(requestCode:Int, @NonNull permissions:Array<String>, @NonNull grantResults:IntArray) {
         when (requestCode) {
             MY_PERMISSION_STORAGE -> for (i in grantResults.indices)
@@ -84,7 +84,7 @@ override fun onRequestPermissionsResult(requestCode:Int, @NonNull permissions:Ar
     }
 ````
 
-````
+````kotlin
     companion object {
         private val MY_PERMISSION_STORAGE = 1111
     }

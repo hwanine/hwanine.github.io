@@ -115,7 +115,7 @@ excerpt_separator: <!--more-->
 
 ### **버튼 리스너**
 
-````Kotlin
+````kotlin
  fun updown_Listener(view: RecyclerView?) {
         up_button.setOnClickListener {
             view?.smoothScrollToPosition(0)
