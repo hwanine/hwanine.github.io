@@ -97,7 +97,7 @@ author:
   avatar           : "/assets/images/jae_hwan.jpg"
   bio              : "창원대학교 컴퓨터공학과 DB Lab"
   location         : "부산광역시"
-  email            : "ljh951103@naver.com"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
