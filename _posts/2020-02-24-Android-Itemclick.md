@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - 리사이클러뷰에서 아이템 클릭 리스너 생성 및 처리 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, RecyclerView, Lamda]
-excerpt_separator: <!--more-->
+excerpt: "리사이클러뷰에서 아이템 클릭 리스너 생성 및 처리"
 ---
 
-# Android - 리사이클러뷰에서 아이템 클릭 리스너 생성 및 처리 (Kotlin)
-<!--more-->
 * **연구주제** : Android - 리사이클러뷰에서 아이템 클릭 리스너 생성 및 처리 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 02월 24일 09:00~17:00

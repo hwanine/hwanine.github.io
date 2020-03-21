@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - Firebase 텍스트 번역기 기기별 API 활용 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, Firebase, API]
-excerpt_separator: <!--more-->
+excerpt: "안드로이드에서 Firebase 텍스트 번역기 기기별 API 활용 "
 ---
 
-# Android - Firebase ML Kit을 활용한 텍스트 번역기 기기별 API 활용 (Kotlin)
-<!--more-->
 * **연구주제** : Android - Firebase 텍스트 번역기 기기별 API 활용 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 04월 03일 09:00~17:00

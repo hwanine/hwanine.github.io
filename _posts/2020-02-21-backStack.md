@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - 백 스택을 통한 백 버튼 내비게이션 뷰 아이템 활성화 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, BottomNavigationView, BackStack]
-excerpt_separator: <!--more-->
+excerpt: "프래그먼트 백 스택 관리"
 ---
 
-# Android - 백 스택을 통한 백 버튼 내비게이션 뷰 아이템 활성화 (Kotlin)
-<!--more-->
 * **연구주제** : Android - 백 스택을 통한 백 버튼 내비게이션 뷰 아이템 활성화 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 02월 21일 09:00~17:00

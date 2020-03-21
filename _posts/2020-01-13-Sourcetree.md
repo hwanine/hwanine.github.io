@@ -5,10 +5,9 @@ categories:
   - Git
 title: Sourcetree
 tags: [Git, Sourcetree, SSH]
-excerpt_separator: <!--more-->
+excerpt:  "소스트리를 이용한 깃 사용방법"
 ---
-# 소스트리를 이용한 깃 사용
-<!--more-->
+
 * **연구주제** : 소스트리를 이용한 깃 사용
 * **연구목적** : 소스트리를 이용한 깃 형상관리
 * **연구일시** : 2020년 01월 13일 09:00~17:00

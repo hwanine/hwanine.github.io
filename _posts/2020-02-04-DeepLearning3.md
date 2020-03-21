@@ -5,11 +5,9 @@ categories:
   - AI
 title: 딥러닝 입문 가이드 (NHN Forward 2019) (3)
 tags: [Machine Learing, Deep Learning, Pytorch, CNN]
-excerpt_separator: <!--more-->
+excerpt: "초보자용 딥러닝 입문 가이드"
 ---
 
-# 딥러닝 입문 가이드 (4)
-<!--more-->
 * **연구주제** : 딥러닝
 * **연구목적** : 딥러닝 활용
 * **연구일시** : 2020년 2월 5일 09:00~18:00

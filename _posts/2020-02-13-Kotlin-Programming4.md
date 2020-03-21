@@ -5,11 +5,9 @@ categories:
   - Kotlin
 title: IntelliJ에서의 코틀린 프로그래밍 - 프로퍼티 (1)
 tags: [Kotlin, 코틀린, JAVA, Android, IntelliJ]
-excerpt_separator: <!--more-->
+excerpt: "코틀린 프로그래밍 4일차"
 ---
 
-# IntelliJ에서의 코틀린 프로그래밍 - 프로퍼티 (1)
-<!--more-->
 * **연구주제** : 코틀린 프로그래밍
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 02월 13일 09:00~17:00

@@ -5,11 +5,8 @@ toc: true
 toc_sticky: true
 categories:
   - Conference
-excerpt_separator: <!--more-->
+excerpt_separator: "NHN Forward 2019 in 창원 후기"
 ---
-
-# NHN Forward 2019 in 창원 후기
-<!--more-->
 
 * **연구주제** : NHN Forward 2019 in 창원 후기
 * **연구목적** : NHN Forward 리뷰

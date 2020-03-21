@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - 액티비티와 프래그먼트의 생명주기 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, Activity, Fragment]
-excerpt_separator: <!--more-->
+excerpt: "안드로이드 액티비티와 프래그먼트 생명주기"
 ---
 
-# Android - 액티비티와 프래그먼트 생명주기 (Kotlin)
-<!--more-->
 * **연구주제** : 액티비티와 프래그먼트 생명주기 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 02월 20일 09:00~17:00

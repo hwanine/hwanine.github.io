@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - Activity에서 Intent를 통해 데이터를 전달하고 받아오기 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, Activity, Intent]
-excerpt_separator: <!--more-->
+excerpt: "안드로이드 Activity에서 Intent를 통해 데이터를 전달하고 받아오기"
 ---
 
-# Android - Activity에서 Intent를 통해 데이터를 전달하고 받아오기 (Kotlin)
-<!--more-->
 * **연구주제** : Android - Activity에서 Intent를 통해 데이터를 전달하고 받아오기 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 20일 09:00~17:00

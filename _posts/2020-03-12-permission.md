@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - 위험 권한, 권한 전용 팝업 생성 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, Dialog, Permission]
-excerpt_separator: <!--more-->
+excerpt: "안드로이드에서 위험 권한, 권한 전용 팝업 생성"
 ---
 
-# Android - 위험 권한, 권한 전용 팝업 생성 (Kotlin)
-<!--more-->
 * **연구주제** : Android - 위험 권한, 권한 전용 팝업 생성 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 12일 09:00~17:00

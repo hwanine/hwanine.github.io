@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - 프래그먼트에서 뒤로가기 두번 눌러서 앱 종료하기 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, Fragment, Backbutton]
-excerpt_separator: <!--more-->
+excerpt: "안드로이드에서 프래그먼트에서 뒤로가기 두번 눌러서 앱 종료하기"
 ---
 
-# Android - 프래그먼트에서 뒤로가기 두번 눌러서 앱 종료하기 (Kotlin)
-<!--more-->
 * **연구주제** : Android - 프래그먼트에서 뒤로가기 두번 눌러서 앱 종료하기 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 16일 09:00~17:00

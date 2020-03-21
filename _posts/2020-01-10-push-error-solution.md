@@ -5,10 +5,9 @@ categories:
   - Git
 title: Git error:failed to push some refs to 'XXX.git'
 tags: [VS Code, Remote Development]
-excerpt_separator: <!--more-->
+excerpt:  "Git error:failed to push some refs to 'XXX.git' 에러 해결법"
 ---
-# Git error:failed to push some refs to 'XXX.git'
-<!--more-->
+
 * **연구주제** : Git error:failed to push some refs to 'XXX.git'
 * **연구목적** : 깃허브 푸시 문제 해결
 * **연구일시** : 2020년 1월 10일 09:00~17:00

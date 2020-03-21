@@ -5,12 +5,9 @@ categories:
   - Android
 title: Android - 데이터베이스 Room DB 활용 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, AAC, Room]
-thubmnail: "https://user-images.githubusercontent.com/57826388/75561411-510cc700-5a8a-11ea-8d17-c1aba1e3ee29.png"
-excerpt_separator: <!--more-->
+excerpt: "데이터베이스 Room DB 활용해보기"
 ---
 
-# Android - 데이터베이스 Room DB 활용 (Kotlin)
-<!--more-->
 * **연구주제** : Android - 데이터베이스 Room DB 활용 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 02일 09:00~17:00

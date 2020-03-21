@@ -5,10 +5,9 @@ categories:
   - Web
 title: 웹 & HTTP & Docker
 tags: [Web, HTTP, Docker]
-excerpt_separator: <!--more-->
+excerpt_separator: " 웹 & HTTP & Docker의 관계"
 ---
-# 웹과 HTTP, 그리고 Docker
-<!--more-->
+
 * **연구주제** : 웹 & HTTP & Docker
 * **연구목적** : 웹 프로그래밍 기초지식 습득
 * **연구일시** : 2019년 12월 30일 09:00~17:00

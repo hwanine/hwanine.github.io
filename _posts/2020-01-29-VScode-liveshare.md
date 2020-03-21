@@ -5,11 +5,9 @@ categories:
   - VS Code
 title: VScode liveshare를 활용한 협업
 tags: [vscode, Visual studio code, Live share]
-excerpt_separator: <!--more-->
+excerpt: "VScode liveshare를 활용한 협업하는 방법"
 ---
 
-# VScode liveshare를 활용한 협업
-<!--more-->
 * **연구주제** : VScode liveshare를 활용한 협업
 * **연구목적** : VScode상에서의 협업
 * **연구일시** : 2020년 1월 29일 13:00~18:00

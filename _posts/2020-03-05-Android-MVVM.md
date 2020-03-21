@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - RoomDB를 이용한 MVVM 아키텍처 디자인 패턴 구축 (Kotlin) (1)
 tags: [Kotlin, 코틀린, JAVA, Android, AAC, LiveData, ViewModel]
-excerpt_separator: <!--more-->
+excerpt: "RoomDB를 이용한 MVVM 아키텍처 디자인 패턴 구축"
 ---
 
-# Android - RoomDB를 이용한 MVVM 아키텍처 디자인 패턴 구축 (Kotlin) (1)
-<!--more-->
 * **연구주제** : Android - RoomDB를 이용한 MVVM 아키텍처 디자인 패턴 구축 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 05일 09:00~17:00

@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - Kakaolink를 활용하여 카톡으로 공유하기(V2) (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, Share, Kakaolink]
-excerpt_separator: <!--more-->
+excerpt: "안드로이드에서 Kakaolink를 활용하여 카톡으로 공유하기"
 ---
 
-# Android - Kakaolink를 활용하여 카톡으로 공유하기(V2) (Kotlin)
-<!--more-->
 * **연구주제** : Android - Kakaolink를 활용하여 카톡으로 공유하기(V2) (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 26일 09:00~17:00

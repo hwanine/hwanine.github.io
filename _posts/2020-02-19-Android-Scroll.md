@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - Scroll시 상, 하단바 숨기기 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, CoordinatorLayout]
-excerpt_separator: <!--more-->
+excerpt: "Scroll시 상, 하단바 숨기기 (Kotlin)"
 ---
 
-# Android - Scroll시 상, 하단바 숨기기 (Kotlin)
-<!--more-->
 * **연구주제** : Scroll시 상, 하단바 숨기기 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 02월 19일 09:00~17:00

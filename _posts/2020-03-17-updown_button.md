@@ -3,13 +3,11 @@ toc: true
 toc_sticky: true
 categories:
   - Android
-title: Android - 리사이클러뷰에서 최상단, 최하단으로 이동하기 (Kotlin)
+title: Android - 리사이클러뷰에서 스크롤 최상단, 최하단으로 이동하기 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, RecyclerView]
-excerpt_separator: <!--more-->
+excerpt: "리사이클러뷰에서 스크롤 최상단, 최하단으로 이동하기"
 ---
 
-# Android - 리사이클러뷰에서 최상단, 최하단으로 이동하기 (Kotlin)
-<!--more-->
 * **연구주제** : Android - 리사이클러뷰에서 최상단, 최하단으로 이동하기 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 17일 09:00~17:00

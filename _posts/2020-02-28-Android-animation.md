@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - Shared Element Transition 화면 전환 애니메이션 및 더블클릭 방지 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, Transition, Shared Element Transition, Animation]
-excerpt_separator: <!--more-->
+excerpt: "Shared Element Transition 화면 전환 애니메이션 및 더블클릭 방지"
 ---
 
-# Android - Shared Element Transition 화면 전환 애니메이션 및 더블클릭 방지 (Kotlin)
-<!--more-->
 * **연구주제** : Android - Shared Element Transition 화면 전환 애니메이션 및 더블클릭 방지 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 02월 28일 09:00~17:00

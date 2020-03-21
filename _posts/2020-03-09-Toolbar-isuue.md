@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - Toolbar, Fragment 문제 및 해결 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, Toolbar]
-excerpt_separator: <!--more-->
+excerpt: "Toolbar, Fragment 문제 및 해결방법"
 ---
 
-# Android - Toolbar, Fragment 문제 및 해결 (Kotlin)
-<!--more-->
 * **연구주제** : Android - Toolbar, Fragment 문제 및 해결 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 09일 09:00~17:00

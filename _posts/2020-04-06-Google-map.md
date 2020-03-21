@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - Google Map API 설치부터 심화 활용까지 (설치) (1) (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, Google, API]
-excerpt_separator: <!--more-->
+excerpt: "안드로이드에서 Google Map API받고 설치하기 "
 ---
 
-# Android - Google Map 설치부터 심화 활용까지 (설치) (1) (Kotlin)
-<!--more-->
 * **연구주제** : Android - Google Map 활용 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 04월 06일 09:00~17:00

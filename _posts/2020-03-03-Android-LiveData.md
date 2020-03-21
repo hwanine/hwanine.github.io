@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - AAC LiveData (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, AAC, LiveData]
-excerpt_separator: <!--more-->
+excerpt: "AAC LiveData 활용해보기"
 ---
 
-# Android - AAC LiveData (Kotlin)
-<!--more-->
 * **연구주제** : Android - AAC LiveData (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 03일 09:00~17:00

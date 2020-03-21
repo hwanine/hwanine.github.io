@@ -5,10 +5,9 @@ categories:
   - Linux
 title: 리눅스 명령어 학습 및 실습
 tags: [Linux, Unix, Ubuntu]
-excerpt_separator: <!--more-->
+excerpt_separator: "자주 쓰이는 리눅스 명령어 모음"
 ---
-# 리눅스 명령어 학습 및 실습
-<!--more-->
+
 * **연구주제** : 리눅스 명령어 학습 및 실습
 * **연구목적** : 리눅스 개발 환경에서의 숙련도 향상
 * **연구일시** : 2020년 1월 2일 09:00~17:00

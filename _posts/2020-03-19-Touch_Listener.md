@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - GestureDetector를 이용한 좌우 스와이프 터치리스너 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, GestureDetector]
-excerpt_separator: <!--more-->
+excerpt: "안드로이드  GestureDetector를 이용한 좌우 스와이프 터치리스너 구현"
 ---
 
-# Android - GestureDetector를 이용한 좌우 스와이프 터치리스너 (Kotlin)
-<!--more-->
 * **연구주제** : Android - GestureDetector를 이용한 좌우 스와이프 터치리스너 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 19일 09:00~17:00

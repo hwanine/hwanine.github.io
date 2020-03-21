@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - Firebase ML Kit을 활용한 이미지 라벨 지정 기기별 API 활용 (1)(Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, Firebase, API]
-excerpt_separator: <!--more-->
+excerpt: "안드로이드에서 Firebase 이미지 라벨 지정 기기별 API 활용"
 ---
 
-# Android - Firebase ML Kit을 활용한 이미지 라벨 지정 기기별 API 활용 (1) (Kotlin)
-<!--more-->
 * **연구주제** : Android - Firebase 이미지 라벨 지정 기기별 API 활용 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 04월 01일 09:00~17:00

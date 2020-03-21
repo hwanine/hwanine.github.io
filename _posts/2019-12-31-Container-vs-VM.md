@@ -5,10 +5,9 @@ categories:
   - Web
 title: Container VS VM
 tags: [Container, Virtual machine, Docker]
-excerpt_separator: <!--more-->
+excerpt_separator: "컨테이너와 가상머신의 차이점"
 ---
-# Container VS Virtual Machine
-<!--more-->
+
 * **연구주제** : Container VS Virtual Machine
 * **연구목적** : 도커 사용전, 컨테이너와 가상머신의 차이를 알기위함
 * **연구일시** : 2019년 12월 31일 09:00~17:00

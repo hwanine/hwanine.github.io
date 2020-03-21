@@ -5,10 +5,9 @@ categories:
   - Cloud
 title: 새로운 클라우드 혁명 엣지 디바이스
 tags: [AWS, Cloud, EdgeComputing, EdgeDevice]
-excerpt_separator: <!--more-->
+excerpt: "새로운 클라우드 혁명 엣지 디바이스란?"
 ---
-# 새로운 클라우드 혁명 엣지 디바이스
-<!--more-->
+
 * **연구주제** : 새로운 클라우드 혁명 엣지 디바이스
 * **연구목적** : 기존의 클라우드 서비스와 엣지 컴퓨팅 비교
 * **연구일시** : 2020년 01월 15일 09:00~17:00

@@ -5,10 +5,9 @@ categories:
   - Database
 title: SQL vs NoSQL
 tags: [SQL, RDBMS, DBMS, DB, NOSQL]
-excerpt_separator: <!--more-->
+excerpt: "NoSQL과 SQL의 차이점"
 ---
-# SQL vs NoSQL
-<!--more-->
+
 * **연구주제** : SQL vs NoSQL
 * **연구목적** : SQL과 NoSQL 비교 연구
 * **연구일시** : 2020년 1월 22일 01:00~06:00

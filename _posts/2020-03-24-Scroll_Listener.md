@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - RecyclerView에서 스크롤 할 때마다 특정 뷰 숨기기 (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, RecyclerView, Scroll]
-excerpt_separator: <!--more-->
+excerpt: "안드로이드 RecyclerView에서 스크롤 할 때마다 특정 뷰 숨기기"
 ---
 
-# Android - RecyclerView에서 스크롤 할 때마다 특정 뷰 숨기기 (Kotlin)
-<!--more-->
 * **연구주제** : Android - RecyclerView에서 스크롤 할 때마다 특정 뷰 숨기기 (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 24일 09:00~17:00

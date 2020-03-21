@@ -5,11 +5,9 @@ categories:
   - Android
 title: Android - AAC ViewModel (Kotlin)
 tags: [Kotlin, 코틀린, JAVA, Android, AAC, LiveData, ViewModel]
-excerpt_separator: <!--more-->
+excerpt: "AAC ViewModel 활용해보기"
 ---
 
-# Android - AAC ViewModel (Kotlin)
-<!--more-->
 * **연구주제** : Android - AAC ViewModel (Kotlin)
 * **연구목적** : 안드로이드에서의 코틀린 활용
 * **연구일시** : 2020년 03월 04일 09:00~17:00
