@@ -5,7 +5,7 @@ categories:
   - BlockChain
 title: 블록체인? 비트코인?
 tags: [BlockChain, Data, Bitcoin]
-excerpt_separator: "블록체인의 개념 정리"
+excerpt: "블록체인의 개념 정리"
 ---
 
 * **연구주제** : 블록체인의 개념 정리

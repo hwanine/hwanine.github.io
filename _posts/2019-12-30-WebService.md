@@ -5,7 +5,7 @@ categories:
   - Web
 title: 웹 & HTTP & Docker
 tags: [Web, HTTP, Docker]
-excerpt_separator: " 웹 & HTTP & Docker의 관계"
+excerpt: " 웹 & HTTP & Docker의 관계"
 ---
 
 * **연구주제** : 웹 & HTTP & Docker

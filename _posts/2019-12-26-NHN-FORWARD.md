@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 categories:
   - Conference
-excerpt_separator: "NHN Forward 2019 in 창원 후기"
+excerpt: "NHN Forward 2019 in 창원 후기"
 ---
 
 * **연구주제** : NHN Forward 2019 in 창원 후기

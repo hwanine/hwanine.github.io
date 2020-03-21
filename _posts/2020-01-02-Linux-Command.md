@@ -5,7 +5,7 @@ categories:
   - Linux
 title: 리눅스 명령어 학습 및 실습
 tags: [Linux, Unix, Ubuntu]
-excerpt_separator: "자주 쓰이는 리눅스 명령어 모음"
+excerpt: "자주 쓰이는 리눅스 명령어 모음"
 ---
 
 * **연구주제** : 리눅스 명령어 학습 및 실습
