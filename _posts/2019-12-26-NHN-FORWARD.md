@@ -1,10 +1,10 @@
 ---
-layout: post
 title: NHN Forward 2019 in 창원 후기
-feature-img: "assets/img/pexels/computer.jpeg"
-thumbnail: "https://user-images.githubusercontent.com/57826388/72157390-23e15800-33fb-11ea-858e-cc6db526b6bc.png"
 tags: [NHN, NHN Forward, Naver, 개발자]
-author: Jae-Hwan Lee
+toc: true
+toc_sticky: true
+categories:
+  - Conference
 excerpt_separator: <!--more-->
 ---
 
