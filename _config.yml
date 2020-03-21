@@ -24,7 +24,7 @@ description              : ""
 url                      : "https://hwanine.github.io"
 baseurl                  : ""
 repository               : "hwanine/hwanine.github.io"
-teaser                   : "/assets/images/computer.png"
+teaser                   : 
 logo                     : 
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true
@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus"
   disqus:
-    shortname            : hwanine.github.io
+    shortname            : hwanine-1
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
