@@ -285,6 +285,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      toc_ads: true
+      toc_sticky: true
   # _portfolio
   - scope:
       path: ""
@@ -293,3 +295,5 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      toc_ads: true
+      toc_sticky: true
