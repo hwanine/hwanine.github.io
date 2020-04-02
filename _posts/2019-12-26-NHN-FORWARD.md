@@ -26,7 +26,7 @@ categories:
 ![image](https://user-images.githubusercontent.com/57826388/72157390-23e15800-33fb-11ea-858e-cc6db526b6bc.png)
 
 &nbsp;
-
+ 
 ## 본론
 
 ### 1. 성장하는 개발자
