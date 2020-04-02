@@ -10,6 +10,7 @@
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="{{ site.title }} Feed">
     {% include head.html %}
     {% include head/custom.html %}
   </head>
@@ -36,8 +37,6 @@
         {% include_cached footer.html %}
       </footer>
     </div>
-
-    <script data-ad-client="ca-pub-1532821601771222" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     {% include scripts.html %}
 
