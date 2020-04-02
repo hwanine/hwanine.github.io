@@ -16,11 +16,7 @@
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-1hrgij4gn6bzm" 
- data-ad-width   = "728" 
- data-ad-height  = "90"></ins> 
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
@@ -28,6 +24,11 @@
     <div class="initial-content">
       {{ content }}
     </div>
+    <ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-1hrgij4gn6bzm" 
+ data-ad-width   = "728" 
+ data-ad-height  = "90"></ins> 
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
     {% if site.search == true %}
       <div class="search-content">
@@ -37,11 +38,6 @@
 
     <div id="footer" class="page__footer">
       <footer>
-        <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-1hrgij4gn6bzm" 
- data-ad-width   = "728" 
- data-ad-height  = "90"></ins> 
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
         {% include footer/custom.html %}
         {% include_cached footer.html %}
       </footer>
