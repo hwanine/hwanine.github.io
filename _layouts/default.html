@@ -25,7 +25,7 @@
     <div class="initial-content">
       {{ content }}
     </div>
-    {% include footer/custom.html %}
+
     {% if site.search == true %}
       <div class="search-content">
         {% include_cached search/search_form.html %}
@@ -33,7 +33,7 @@
     {% endif %}
   
     <div id="footer" class="page__footer">
-      
+      {% include footer/custom.html %}
       <footer>
         {% include_cached footer.html %}
       </footer>
