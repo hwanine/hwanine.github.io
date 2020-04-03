@@ -91,14 +91,14 @@ layout: default
     {% endif %}
   </article>
 
-  {% comment %}<!-- only show related on a post page when `related: true` -->
+  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
+  
+  {% if page.id and page.related and site.related_posts.size > 0 %}
   <ins class="kakao_ad_area" style="display:none;" 
  data-ad-unit    = "DAN-1iuvyp0kkdoir" 
  data-ad-width   = "320" 
  data-ad-height  = "100"></ins> 
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>{% endcomment %}
-  
-  {% if page.id and page.related and site.related_posts.size > 0 %}
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     <div class="page__related">
       <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
       <div class="grid__wrapper">
