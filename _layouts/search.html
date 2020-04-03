@@ -27,11 +27,7 @@ layout: default
       {%- when "lunr" -%}
         <input type="text" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
         <div id="results" class="results">
-          <ins class="kakao_ad_area" style="display:none;" 
-    data-ad-unit    = "DAN-u8aobeecblmb" 
-    data-ad-width   = "320" 
-    data-ad-height  = "100"></ins> 
-   <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        
         </div>
       {%- when "google" -%}
         <form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
@@ -46,3 +42,8 @@ layout: default
     {%- endcase -%}
   </div>
 </div>
+<ins class="kakao_ad_area" style="display:none;" 
+    data-ad-unit    = "DAN-u8aobeecblmb" 
+    data-ad-width   = "320" 
+    data-ad-height  = "100"></ins> 
+   <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
