@@ -2,7 +2,7 @@
 title: "Crossing Cryptographic Algorithm"
 excerpt: "대칭키 암호화 알고리즘을 여러가지 기법과 함께 조합한 강력한 암호화 알고리즘 개발"
 header:
-  teaser: assets/images/epoxy.jpg
+  teaser: assets/images/encryption.jfif
 toc: true
 toc_sticky: true
 tags: [portfolio]
