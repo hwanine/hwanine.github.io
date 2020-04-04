@@ -1,9 +1,8 @@
 ---
 title: "Wimmy - Where is my memory?"
 excerpt: "이미지 태그 및 특징/위치/날짜 분류를 통한 안드로이드 사진 관리 애플리케이션"
-header:
-  image: /assets/images/unsplash-gallery-image-3.jpg
-  teaser: assets/images/unsplash-gallery-image-3-th.jpg
+toc: true
+toc_sticky: true
 ---
 
 # 프로젝트 개요
