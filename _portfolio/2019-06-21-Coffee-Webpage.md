@@ -1,6 +1,6 @@
 ---
 title: "HTML, MySQL, PHP를 활용한 커피 쇼핑몰"
-excerpt: "HTML, MySQL, PHP를 활용하여 실제로 서비스 가능한 커피 쇼핑몰 구축"
+excerpt: "HTML, MySQL, PHP를 활용하여 커피 쇼핑몰 웹 서비스 구축"
 header:
   teaser: assets/images/coffee.png
 toc: true
