@@ -1,6 +1,6 @@
 ---
-title: "Ginger Gulp Identity"
-excerpt: "Ginger Gulp design system including logo mark, website design, and branding applications."
+title: "Wimmy - Where is my memory?"
+excerpt: "이미지 태그 및 특징/위치/날짜 분류를 통한 안드로이드 사진 관리 애플리케이션"
 header:
   image: /assets/images/unsplash-gallery-image-3.jpg
   teaser: assets/images/unsplash-gallery-image-3-th.jpg
@@ -78,20 +78,16 @@ header:
     - 사용자가 직접 태그를 입력하거나 수정, 삭제 가능​
     - 사진 공유기능​
     - 백그라운드에서 특징정보 자동 분석 및 삽입​
+- 2020\. 03. 22 ~ 04. 5: 추가 기능 도출 및 버그 픽스
+    - 기타 버그 수정
+    - 이미지 리스트 그리드 값 조절 기능
+    - 유사 이미지 검출 및 컨트롤 기능
+    - 애니메이션 지원
+    - 실시간 로컬 이미지 변경 감지 -> 자동 추가, 삭제
 
 ## 예정
 
-- 추가 기능 도출
-- 테스팅
-- 버그 수정
-
-## 문제점
-
-- 좌표를 지역으로 변환하는 GeoCoder 사용시 일부 사진에서 에러 발생
-- ​추가된 사진에 대해서는 사진 추가 일시를 확인해서 그 이후 사진으로 구분하지만, 삭제된 사진의 경우 모든 사진을 확인해야하는 문제
-- 애니메이션 이미지 지원
-- 실시간으로 추가 삭제되는 사진을 반영하지 못함
-- 날짜별로 사진 검색
+- 기타 버그 수정
 
 ​<br>
 
@@ -246,6 +242,16 @@ header:
 ![KakaoTalk_20200321_222912042](https://user-images.githubusercontent.com/57826388/77233906-f92b3100-6bed-11ea-8995-130f9561a484.jpg)
 
 <br>
+
+### **유사 이미지 검색**
+
+- 사용자가 연속사진을 촬영하거나 여러 사진을 한꺼번에 수용하는 경우, 마음에 드는 몇 개의 사진을 제외하고는 나머지 사진들을 일일이 지워야 하는 경우가 있다.
+- 사용자는 특정 이미지에 대해 유사 이미지를 검색하고 이를 추가 삭제할 수 있다.
+- 유사 이미지는 날짜와 위치의 연관성으로 구분한다.
+
+![image](https://user-images.githubusercontent.com/57826388/78421751-fec85280-7694-11ea-9e8e-4e841b985c90.png)
+
+![image](https://user-images.githubusercontent.com/57826388/78421752-02f47000-7695-11ea-9a33-927def20f6fc.png)
 
 ## Others
 
