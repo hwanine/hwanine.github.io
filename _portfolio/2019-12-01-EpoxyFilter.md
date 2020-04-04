@@ -1,6 +1,6 @@
 ---
-title: "콘크리트-에폭시 파편 영상 분석"
-excerpt: "콘크리트 절단면의 에폭시 검출을 위한 영상처리 프로그램"
+title: "OpenCV를 활용한콘크리트-에폭시 파편 영상 분석"
+excerpt: "콘크리트 절단면의 에폭시 검출을 위한 OpenCV를 활용한 영상처리 프로그램"
 header:
   teaser: assets/images/epoxy.jpg
 toc: true
