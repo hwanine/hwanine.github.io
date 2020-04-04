@@ -237,7 +237,7 @@ tag_archive:
   path: /tags/
 portfolio_archive:
   type: liquid
-  path: /archive/
+  path: /portfolio-archive/
 
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
