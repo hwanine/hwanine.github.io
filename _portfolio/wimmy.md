@@ -1,6 +1,12 @@
 ---
 title: "Baz Boom Identity"
 excerpt: "Baz Boom design system including logo mark, website design, and branding applications."
+layout: single
+related: true
+author_profile: false
+share: true
+toc_ads: true
+toc_sticky: true
 
 ---
 
