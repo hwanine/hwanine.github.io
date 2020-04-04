@@ -7,7 +7,7 @@ main:
   - title: "Tags"
     url: /tags/
   - title: "Portfolio"
-    url: /archive/
+    url: /collection-archive/
 
   #- title: "Home"
   #  url: /post/
