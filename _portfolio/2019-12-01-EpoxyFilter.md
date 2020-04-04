@@ -5,9 +5,6 @@ header:
   teaser: assets/images/epoxy.jpg
 toc: true
 toc_sticky: true
-tags: [portfolio]
-categories:
-  - portfolio
 ---
 
 # 프로젝트 개요
