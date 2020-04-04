@@ -280,12 +280,9 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: portfolio-archive
+      type: portfolio
     values:
       layout: single
-      related: true
       author_profile: false
       share: true
-      toc_ads: true
-      toc_sticky: true
       
