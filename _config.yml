@@ -285,7 +285,7 @@ defaults:
       type: portfolio
     values:
       layout: single
-      sort_by: date
+      sort_by: title
       sort_order: reverse
       author_profile: true
       read_time: true
