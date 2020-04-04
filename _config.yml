@@ -285,8 +285,13 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: false
+      author_profile: true
+      read_time: true
+      comments: true
       share: true
+      related: true
+      toc_ads: true
+      toc_sticky: true
   # _pages
   - scope:
       path: "_pages"
