@@ -258,7 +258,11 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
+    
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -277,7 +281,7 @@ defaults:
       toc_sticky: true
   # _portfolio
   - scope:
-      path: "_portfolio"
+      path: ""
       type: portfolio
     values:
       layout: single
