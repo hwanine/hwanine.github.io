@@ -280,7 +280,7 @@ defaults:
   # _portfolio
   - scope:
       path: "_portfolio"
-      type: portfolio
+      type: portfolio-archive
     values:
       layout: single
       related: true
