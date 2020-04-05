@@ -2,7 +2,7 @@
 title: "Learning Group In Changwon National University"
 excerpt: "소프트웨어 공학론을 따른 교내 학술 모임 애플리케이션 개발"
 header:
-  teaser: assets/images/lg.png
+  teaser: assets/images/lg.PNG
 toc: true
 toc_sticky: true
 ---
