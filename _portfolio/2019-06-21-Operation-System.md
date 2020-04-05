@@ -1,6 +1,6 @@
 ---
 title: "Linux에서 동작하는 가상의 Operation System"
-excerpt: "가상의 OS 시스템 구현"
+excerpt: "가상의 OS 시스템 구축"
 header:
   teaser: assets/images/os.png
 toc: true
