@@ -4,7 +4,7 @@ toc_sticky: true
 categories:
   - Life
 title: LG전자 32UK50T 4K 모니터 리퍼 구매 후기
-tags: [LG, 모니터, 4K]]
+tags: [LG, 모니터, 4K]
 excerpt: "LG전자 32UK50T 4K 모니터 리퍼 구매 후기"
 ---
 
