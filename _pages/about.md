@@ -12,6 +12,5 @@ layouts_gallery:
   - url: /assets/images/os.jpeg
     image_path: /assets/images/os.jpeg
     alt: "archive layout example"
-toc: true
 ---
 
