@@ -4,10 +4,10 @@ main:
     url: "/" # 클릭시 이동할 URL
   - title: "Posts"
     url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "Portfolio"
     url: /portfolio/
+  - title: "About"
+    url: /about/
 
   #- title: "Home"
   #  url: /post/
