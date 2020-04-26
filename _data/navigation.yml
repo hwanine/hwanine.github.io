@@ -1,6 +1,5 @@
 # main links
 main:
-
   - title: "Home" # 네비게이션 바에 표시 되는 이름
     url: "/" # 클릭시 이동할 URL
   - title: "Posts"
