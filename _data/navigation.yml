@@ -5,7 +5,7 @@ main:
   - title: "Posts"
     url: /categories/
   - title: "Portfolio"
-    url: /portfolio/
+    url: https://devjhlee.github.io/
   - title: "About"
     url: /about/
 
