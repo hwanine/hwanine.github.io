@@ -6,8 +6,8 @@ main:
     url: /categories/
   - title: "Portfolio"
     url: https://devjhlee.github.io/
-  - title: "About"
-    url: /about/
+  - title: "Tags"
+    url: /tags/
 
   #- title: "Home"
   #  url: /post/
