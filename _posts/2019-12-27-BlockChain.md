@@ -2,7 +2,7 @@
 toc: true
 toc_sticky: true
 categories:
-  - BlockChain
+  - Others
 title: 블록체인? 비트코인?
 tags: [BlockChain, Data, Bitcoin]
 excerpt: "블록체인의 개념 정리"

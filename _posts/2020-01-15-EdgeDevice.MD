@@ -2,7 +2,7 @@
 toc: true
 toc_sticky: true
 categories:
-  - Cloud
+  - Others
 title: 새로운 클라우드 혁명 엣지 디바이스
 tags: [AWS, Cloud, EdgeComputing, EdgeDevice]
 excerpt: "새로운 클라우드 혁명 엣지 디바이스란?"

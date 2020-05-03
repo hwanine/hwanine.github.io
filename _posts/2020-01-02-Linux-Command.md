@@ -2,7 +2,7 @@
 toc: true
 toc_sticky: true
 categories:
-  - Linux
+  - Others
 title: 리눅스 명령어 학습 및 실습
 tags: [Linux, Unix, Ubuntu]
 excerpt: "자주 쓰이는 리눅스 명령어 모음"
