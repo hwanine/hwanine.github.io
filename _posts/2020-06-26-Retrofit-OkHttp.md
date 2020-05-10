@@ -4,7 +4,7 @@ toc_sticky: true
 categories:
   - Android
 title: Android - Retrofit2, OkHttp를 함께 사용하여 더욱 간결한 RestAPI 연동 (Kotlin) (2)
-tags: [Kotlin, 코틀린, JAVA, Android, RestAPI, Retrofit]
+tags: [Kotlin, 코틀린, JAVA, Android, RestAPI, Retrofit, OkHttp]
 excerpt: "Retrofit과 OkHttp를 함께 사용하여 더욱 간결하게 네이버 RestAPI와의 연동하는 과정을 소개하겠습니다."
 ---
 
@@ -13,6 +13,8 @@ excerpt: "Retrofit과 OkHttp를 함께 사용하여 더욱 간결하게 네이�
 ## 개요
 
 ### **OkHttp**
+
+![image](https://user-images.githubusercontent.com/57826388/81491287-bfaaa400-92c7-11ea-992b-55f00fa8d177.png)
 
 이전 포스팅에서 레트로핏을 사용하는 방법에 대해 다루었습니다.
 
