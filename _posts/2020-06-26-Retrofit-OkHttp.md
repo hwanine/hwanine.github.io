@@ -61,7 +61,7 @@ excerpt: "Retrofit과 OkHttp를 함께 사용하여 더욱 간결하게 네이�
 
 우선 앱 수준 그래들에 다음과 같이 기존 Retrofit과 OkHttp에 관련된 라이브러리를 추가해줍니다.
 
-```Gradle
+```gradle
 implementation 'com.squareup.retrofit2:converter-gson:2.6.2' 
 implementation 'com.squareup.retrofit2:retrofit:2.6.0'
 implementation 'com.squareup.okhttp3:okhttp:3.11.0'
@@ -72,7 +72,7 @@ implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
 
 그리고 매니페스트에 인터넷 접속 권한을 허용합니다.
 
-```XML
+```xml
 <uses-permission android:name="android.permission.INTERNET"/>
 ```
 
@@ -82,7 +82,7 @@ implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
 
 > 데이터 클래스 생성
 
-```Kotlin
+```kotlin
 // ResultGetSearchNews.kt
 
 data class ResultGetSearchNews(
@@ -126,7 +126,7 @@ data class Result (
 
 create() 함수를 Activity에서 Interface인 `NaverAPI.kt`으로 옮겼으며, 상수들을 모두 `Companion` 처리하여 전역으로 둡니다.
 
-```Kotlin
+```kotlin
 // NaverAPI.kt
 
 companion object {
@@ -150,7 +150,7 @@ companion object {
 두 개의 `Interceptor`를 클라이언트에 추가한 후, 다시 이 클라이언트를 레트로핏을 빌드할 때 추가해줍니다.  
 create 할 때 헤더를 고정으로 넣어주므로 호출할 때에 사용하던 헤더는 필요가 없으므로 지워줍니다.
 
-```Kotlin
+```kotlin
 // NaverAPI.kt
 
 interface NaverAPI {
@@ -207,7 +207,7 @@ interface NaverAPI {
 
 > API 호출 및 연동
 
-```Kotlin
+```kotlin
 // MainActivity.kt
 
 val api = NaverAPI.create()
