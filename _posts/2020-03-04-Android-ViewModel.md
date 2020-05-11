@@ -47,9 +47,6 @@ ViewModel객체는 자동으로 화면 회전같은 상태 변화동안 자동�
 
 ![image](https://user-images.githubusercontent.com/57826388/75570497-9a651280-5a9a-11ea-97aa-29750175228b.png)
 
-
-<https://junghun0.github.io/2019/05/22/android-viewmodel/>
-
 ViewModel에서 ViewModelProvider에 전달된 Lifecycle에 생명주기 범위가 지정된다.  
 즉, 주어진 액티비티가 살아있는 동안 메모리에 계속 남아있게된다.
 참고로 액티비티의 경우에는 finish될 때, 프래그먼트의 경우에는 detached될 떄, 메모리에서 해제된다.
