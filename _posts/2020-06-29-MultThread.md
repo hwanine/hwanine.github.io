@@ -138,8 +138,10 @@ excerpt: "안드로이드를 예로 프로그램을 다루면서 마주하는 �
 
 - <https://medium.com/velotio-perspectives/an-introduction-to-asynchronous-programming-in-python-af0189a88bbb>  
   
-- https://hamait.tistory.com/694
+- <https://hamait.tistory.com/694>
 
-- https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html
+- <https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html>
+
+<br>
 
 
