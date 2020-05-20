@@ -102,7 +102,7 @@ data class Items(
 )
 ```
 
-```Kotlin
+```kotlin
 // ResultTransferPapago.kt
 
 data class ResultTransferPapago (
