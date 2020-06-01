@@ -41,7 +41,7 @@ excerpt: "안드로이드에서 Google Map API받고 설치하기 "
 
 ### **API Key 받아오기**
 
-<ttps://console.cloud.google.com/apis>
+<https://console.cloud.google.com/apis>
 
 다음 주소로가서 새 프로젝트를 생성해야 한다.
 
