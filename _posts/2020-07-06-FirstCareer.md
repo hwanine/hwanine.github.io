@@ -3,9 +3,9 @@ toc: true
 toc_sticky: true
 categories:
   - Life
-title: 2014 ~ 2020 내가 개발자가 되기까지의 성장 및 취준 과정과 결과
+title: (~ 2020) 개발자가 되기까지의 성장 및 취준 과정과 결과
 tags: [Career]
-excerpt: "2020 개발자가 되기까지의 성장 및 취준 과정과 결과를 소개합니다."
+excerpt: "(~ 2020) 개발자가 되기까지의 성장 및 취준 과정과 결과를 소개합니다."
 ---
 
 # 서론
