@@ -3,7 +3,7 @@ toc: true
 toc_sticky: true
 categories:
   - AI
-title: 기계학습 - 텐서플로우에 대한 개념과 실습과정 및 결론
+title: 기계학습 - TensorFlow에 대한 개념과 실습과정 및 결론
 tags: [AI, 인공지능, TensorFlow]
 excerpt: "기계학습을 위한 라이브러리인 텐서플로우에 대한 개념과 실습과정 및 결론을 소개합니다."
 ---
