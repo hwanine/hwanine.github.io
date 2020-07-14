@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "잡다한 IT 개발 이야기"
 title_separator          : "|"
 subtitle                 : 
-name                     : "이재환"
+name                     : "Ricky Lee"
 description              : ""
 url                      : "https://hwanine.github.io"
 baseurl                  : ""
@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "이재환"
+  name             : "Ricky Lee"
   avatar           : "/assets/images/jae_hwan.jpg"
-  bio              : "Junior Developer"
+  bio              : "Junior Client Developer"
   location         : "Seoul, Korea"
   email            : "ljh951103@naver.com"
   links:
