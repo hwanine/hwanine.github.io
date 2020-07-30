@@ -38,6 +38,7 @@ git push 명령어를 사용하여 push를 하려고 할 때
 &nbsp;
 
 ## 본론
+
 >### 해결: Merge -> push
 
  #### 1. pull
