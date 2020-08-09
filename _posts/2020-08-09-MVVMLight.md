@@ -414,3 +414,7 @@ DataContext="{Binding Source={StaticResource Locator}, Path=SenderViewModel}"
 텍스트를 입력하고 버튼을 누르면 다른 뷰가 뷰모델을 통해 업데이트가 됨을 확인할 수 있습니다.
 
 ![image](https://user-images.githubusercontent.com/57826388/89732855-7b789c80-da8c-11ea-8617-c22b9aa89e83.png)
+
+<br>
+
+- 참고자료: <https://m.blog.naver.com/PostView.nhn?blogId=ljy5745&logNo=220706634799&proxyReferer=https:%2F%2Fwww.google.com%2F>
