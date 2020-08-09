@@ -3,7 +3,7 @@ toc: true
 toc_sticky: true
 categories:
   - C#
-title: [WPF] MVVM Light 활용 
+title: WPF - MVVM Light 활용 
 tags: [C#, WPF, MVVM]
 excerpt: "WPF에서 MVVM Light 프레임워크를 활용하여 간단한 프로그램을 만들어봅시다."
 ---
@@ -390,6 +390,8 @@ namespace MVVMLightSample1.ViewModel
     }
 }
 ```
+
+<br>
 
 이제 뷰모에서 데이터 컨텍스트를 저렇게 참조하는 이유를 알 수 있습니다.
 
