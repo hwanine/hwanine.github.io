@@ -17,7 +17,7 @@ Binding 클래스의 UpdateSourceTrigger 속성은 바인딩 소스 업데이트
 이것을 xaml에서 사용 하려면 다음과 같이 사용합니다.
 
 ```xml
-Text="{Binding Text,UpdateSourceTrigger=PropertyChanged}" 
+Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}" 
 ```
 
 <br>
