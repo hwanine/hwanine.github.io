@@ -4,8 +4,8 @@ main:
     url: "/" # 클릭시 이동할 URL
   - title: "Posts"
     url: /categories/
-  - title: "Portfolio"
-    url: https://devjhlee.github.io/
+  #- title: "Portfolio"
+  #  url: https://devjhlee.github.io/
   - title: "Tags"
     url: /tags/
 
