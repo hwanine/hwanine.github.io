@@ -62,11 +62,63 @@ STL(Standard Template Libary) 컨테이너는 vector, deque, list, map 등의 �
 본 예제로 사용해볼 컨테이너는 map으로, 헤더를 포함시켜준다. 
 allocator는 IPC에서 메모리 할당과 해제를 담당한다.
 
+### 선언
+
 ```c++
 #include <boost/interprocess/managed_shared_memory.hpp>
 #include <boost/interprocess/containers/map.hpp>
 #include <boost/interprocess/allocators/allocator.hpp>
 ```
+
+이후 테스트로 사용할 구조체를 생성한다.
+
+```c++
+typedef struct TestStruct
+{
+    int     firstNum;
+    int     secondNum;
+    bool    flag;
+
+} test_struct;
+
+using namespace boost::interprocess;
+```
+
+<br>
+
+### Sender
+
+이후 공유할 맵을 메모리에 Write한다.  
+메모리를 생성한 후, Allocator(할당자)를 이용하여 모델 내 데이터와 STL 컨테이너간 데이터를 얻을 수 있도록 한다.
+
+```c++
+managed_shared_memory segment(create_only, "SharedMemoryTest", sizeof(test_struct) * 480000);
+
+typedef interprocess::allocator<test_struct, managed_shared_memory::segment_manager>allocator;
+typedef map<<int, test_struct>, allocator>test_map;
+
+const test_alloc test_inst(segment.get_segment_manager());
+test_map *test_map_data = segment.construct<test_map>("data")(test_inst);
+
+//data set
+```
+
+<br>
+
+### Receiver
+
+```c++
+managed_shared_memory segment(open_only, "SharedMemoryTest");
+
+typedef interprocess::allocator<test_struct, managed_shared_memory::segment_manager>allocator;
+typedef map<<int, test_struct>, allocator>test_map;
+
+test_map *test_map_data = segment.find<test_map>("data").first;
+
+//data get
+```
+
+위 코드에서 데이터를 직접 맵에 입력하고 수신해보면 메모리가 공유되는것을 알 수 있다.
 
 <br>
 
