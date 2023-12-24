@@ -3,7 +3,7 @@ toc: true
 toc_sticky: true
 categories:
   - C++
-title: [C++] JNI 연동시 jvm 인스턴스 전역으로 관리하기 (멀티쓰레드 문제해결)
+title: \[C++\] JNI 연동시 jvm 인스턴스 전역으로 관리하기 (멀티쓰레드 문제해결)
 tags: [jni]
 excerpt: "JNI 연동시 멀티쓰레드에서 jvm 인스턴스에 접근이 불가능하기 때문에 전역으로 관리하는 방안"
 ---

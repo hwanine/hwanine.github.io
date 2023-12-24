@@ -3,7 +3,7 @@ toc: true
 toc_sticky: true
 categories:
   - C++
-title: [C++] JNI 환경에서 C++에서 전송한 문자열이 깨지는 문제 컨버팅 방법
+title: \[C++\] JNI 환경에서 C++에서 전송한 문자열이 깨지는 문제 컨버팅 방법
 tags: [jni]
 excerpt: "JNI 환경에서 C++에서 전송한 문자열이 깨지는 문제를 해결한 코드 보관용"
 ---
