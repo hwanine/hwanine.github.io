@@ -99,9 +99,6 @@ author:
   location         : "Seoul, Korea"
   email            : "ljh951103@naver.com"
   links:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/profile.php?id=100001739969149"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/hwanj.95/"
@@ -116,9 +113,6 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/profile.php?id=100001739969149"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: https://www.instagram.com/hwanj.95/"
