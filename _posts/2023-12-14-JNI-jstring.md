@@ -20,6 +20,7 @@ JNI를 통해 C++에서 문자열을 jstring으로 인스턴스를 생성하여 
 ## 코드 처리
 
 - 선언 함수
+
 ```c++
 char* JByteArray2CStr(JNIEnv * env, jbyteArray javaBytes);
 jbyteArray CStr2JByteArray(JNIEnv * env, const char* nativeStr);
@@ -33,16 +34,15 @@ jstring JavaNewStringChar(JNIEnv * env, const char* nativeStr);
 <br>
 
 - 구현 함수
+
 ```c++
 static jclass class_String;
 static jmethodID mid_getBytes, mid_getBytesEncoding;
 static jmethodID mid_newString, mid_newStringEncoding;
 
-
 /// <summary>
 /// JAVA <-> C++ ENCODING
 /// </summary>
-
 
 char* JByteArray2CStr(JNIEnv* env, jbyteArray javaBytes) {
 	size_t len = env->GetArrayLength(javaBytes);
