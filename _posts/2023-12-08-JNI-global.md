@@ -62,4 +62,4 @@ unsigned __stdcall Thread_RunTest(void* pParam)
 
 ## 참고자료
 
-- https://planek.tistory.com/44
+- [https://planek.tistory.com/44](https://planek.tistory.com/44)
